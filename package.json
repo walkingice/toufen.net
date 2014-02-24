@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "./node_modules/.bin/brunch watch --server",
-    "deploy": "cp -rf _public/* .",
+    "deploy": "./node_modules/.bin/brunch build && cp -rf _public/* .",
     "postinstall": "scripts/postinstall.sh"
   },
   "dependencies": {
