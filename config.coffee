@@ -1,7 +1,11 @@
 exports.config =
   # See docs at http://brunch.readthedocs.org/en/latest/config.html.
   conventions:
-    assets: /^app\/assets\//
+    assets: (path) ->
+        appRE = /^app\/assets\//
+        # anything under /vendor/PROJECT/assets will be regards as assets
+        vendorRE = /^vendor\/.*\/assets\//
+        return path.match(appRE) || path.match(vendorRE)
   modules:
     definition: false
     wrapper: false
