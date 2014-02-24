@@ -1,7 +1,25 @@
-ul.nav
-  li(ng-class="getClass('/list')")
-    a(ng-href='#/list') List
-  li(ng-class="getClass('/foo')")
-    a(ng-href='#/foo') Foo
-  li(ng-class="getClass('/about')")
-    a(ng-href='#/about') About
+// Header
+header.mobile
+  .row
+    .col.full
+      .logo
+        a(href='#')
+          img(alt='', src='images/logo.png')
+      nav#nav-wrap
+        a.mobile-btn(href='#nav-wrap', title='Show navigation') Show navigation
+        a.mobile-btn(href='#', title='Hide navigation') Hide navigation
+        ul#nav.nav
+          li
+            a(href='#intro') Home
+          li
+            a(href='#services') Services
+          li
+            a(href='#portfolio') Portfolio
+          li
+            a(href='#journal') Journal
+          li
+            a(href='#about') About Us
+          li
+            a(href='#contact') Contact
+
+// Header End

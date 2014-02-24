@@ -17,30 +17,8 @@ html
     link(rel='shortcut icon', href='favicon.ico')
 
   body(data-spy='scroll', data-target='#nav-wrap')
-    // Header
-    header.mobile
-      .row
-        .col.full
-          .logo
-            a(href='#')
-              img(alt='', src='images/logo.png')
-          nav#nav-wrap
-            a.mobile-btn(href='#nav-wrap', title='Show navigation') Show navigation
-            a.mobile-btn(href='#', title='Hide navigation') Hide navigation
-            ul#nav.nav
-              li
-                a(href='#intro') Home
-              li
-                a(href='#services') Services
-              li
-                a(href='#portfolio') Portfolio
-              li
-                a(href='#journal') Journal
-              li
-                a(href='#about') About Us
-              li
-                a(href='#contact') Contact
-    // Header End
+    include partials/nav
+
     // Intro Section
     section#intro
       // Flexslider Start
