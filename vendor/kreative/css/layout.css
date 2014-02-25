@@ -81,16 +81,7 @@ properly.
 
 /* ================================================================== */
 
-header {
-   height: 54px;
-   width: 100%;
-   z-index: 99999;
-   background: url(/images/k-opacity-70.png);
 
-   position: fixed;
-   top: 0;
-   left: 0;
-}
 header.static {
    background: #232629;
    position: static;
@@ -151,17 +142,14 @@ ul#nav li {
 }
 ul#nav > li.active a {
    background: #11ABB0;
-   color: #fff !important;
 }
 
 /* Links */
 ul#nav li a {
    display: block;
    padding: 0 14px;
-   line-height: 54px;
 	text-decoration: none;
    text-align: left;
-   color: #fff;
 
 	-webkit-transition: color .2s ease-in-out;
 	-moz-transition: color .2s ease-in-out;
@@ -171,9 +159,6 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li:hover > a,
-ul#nav li.active a { color: #11ABB0; }
-
 
 
 /* ================================================================== */
