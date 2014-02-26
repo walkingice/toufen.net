@@ -1,7 +1,7 @@
 'use strict';
 var App;
 
-App = angular.module('twoffline', ['ngCookies',
+App = angular.module('toufen.net', ['ngCookies',
                                        'ngResource',
                                        'twControllers',
                                        'twDirectives',
