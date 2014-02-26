@@ -3,62 +3,6 @@ Place custom styles here. These styles should loaded after
 bootstrap, so they may override it's behavior.
 */
 
-@transparentWhite:       rgba(255, 255, 255, 0.8);
-@navbarHeight:                     72px;
-@navbarWidth:                     100%;
-@topestLayer:                      9999;
-@vGutter:                          20px;
-
-header, header.header {
-	height: @navbarHeight;
-	width: @navbarWidth;
-	position: fixed;
-	top: 0;
-	left: 0;
-	background: @transparentWhite;
-	z-index: @topestLayer;
-}
-
-ul#nav {
-	min-height:  @navbarHeight;
-	li {
-		min-height:  @navbarHeight;
-		a {
-			color: @grayDark;
-			line-height: @navbarHeight;
-		}
-	}
-
-	li.active {
-		a {
-			color: @grayDark;
-			line-height: @navbarHeight;
-		}
-	}
-}
-
-#concept {
-	h1, h2, h3 {
-		color: @white;
-	}
-}
-
-section.block {
-	padding-top: 156px;
-	padding-bottom: 120px;
-}
-
-#target {
-	background-color: @grayLighter;
-}
-
-// Footer
-.footer {
-  background-color: whitesmoke;
-  padding: 30px 0;
-  /* .box-shadow(inset 0 5px 15px rgba(0, 0, 0, .025)); */
-}
-
 // Application styles
 .donetrue {
   text-decoration: line-through;
