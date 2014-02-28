@@ -5,38 +5,71 @@
 @lightGrayishOrange:            #f6f4ef;
 @grayishOrange:                 #c0b491;
 @mostlyDarkOrange:              #a49360;
+@customGray:                    #727272;
+
+@topestLayer:                      9999;
+
+@navbarFrontColor:             @customGray;
+@navbarBackColor:             @white;
+@navbarActiveFrontColor:           @grayDark;
+
 @navbarHeight:                     72px;
 @navbarWidth:                     100%;
-@topestLayer:                      9999;
 @vGutter:                          20px;
 
-header, header.header {
+#nav {
 	height: @navbarHeight;
 	width: @navbarWidth;
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: @transparentWhite;
+	background: @navbarBackColor;
 	z-index: @topestLayer;
-}
-
-ul#nav {
-	min-height:  @navbarHeight;
-	li {
+	#nav-wrap ul {
+		margin: 0;
+		padding: 0;
+		border: none;
+		outline: none;
+	}
+	ul.nav {
+		margin-left: 180px;
 		min-height:  @navbarHeight;
-		a {
-			color: @grayDark;
-			line-height: @navbarHeight;
+		li {
+			position: relative;
+			list-style: none;
+			display: inline-block;
+			min-height:  @navbarHeight;
+			padding: 0 15px;
+			a {
+				display: block;
+				text-decoration: none;
+				text-align: left;
+				color: @navbarFrontColor;
+				line-height: @navbarHeight;
+				-webkit-transition: color .2s ease-in-out;
+				-moz-transition: color .2s ease-in-out;
+				-o-transition: color .2s ease-in-out;
+				-ms-transition: color .2s ease-in-out;
+				transition: color .2s ease-in-out;
+			}
 		}
-	}
+	
+		li:hover{
+			a {
+				color: @navbarActiveFrontColor;
+			}
+		}
 
-	li.active {
-		a {
-			color: @grayDark;
-			line-height: @navbarHeight;
+		li.active {
+			background-color: @grayLighter;
+			a {
+				color: @navbarActiveFrontColor;
+			}
 		}
 	}
 }
+
+
 
 section.block {
 	padding-top: 156px;
@@ -44,20 +77,30 @@ section.block {
 }
 
 #intro {
-	h1, h2, h3 {
-		color: @white;
-		font: 76px/78px montserrat-regular, Sans-serif;
-		color: #fff;
-		text-shadow: 0px 1px 5px rgba(50, 50, 50, .5);
-	}
-	.slider-text h2 span, .slider-text {
-		color: @cyan;
-	}
-	span.highlight {
-		color: @cyan;
-		font-size: 110%;
-		margin-left: 10px;
-		margin-right: 10px;
+	background: #111 url(/images/intro-bg.jpg) no-repeat center;
+	overflow: hidden;
+	color: #737E8C;
+	#intro-wrap {
+		text-align: center;
+		width: 85%;
+		margin: 256px auto 166px auto;
+		h1, h2, h3 {
+			color: @white;
+			font: 76px/78px montserrat-regular, Sans-serif;
+			color: #fff;
+			text-shadow: 0px 1px 5px rgba(50, 50, 50, .5);
+		}
+		.slides {
+			max-height: 660px;
+			overflow: hidden;
+			margin: 156px auto 66px auto;
+		}
+		span.highlight {
+			color: @cyan;
+			font-size: 110%;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
 	}
 }
 

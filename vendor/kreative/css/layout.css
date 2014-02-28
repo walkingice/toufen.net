@@ -107,99 +107,12 @@ header .logo a {
    top: 16px;
 }
 
-/* primary navigation
---------------------------------------------------------------------- */
-#nav-wrap ul, #nav-wrap li, #nav-wrap a {
-	margin: 0;
-	padding: 0;
-	border: none;
-	outline: none;
-}
-
-/* nav-wrap */
-#nav-wrap {
-	position: relative;
-   font: 13px opensans-regular, sans-serif;
-   float: left;
-}
-
-/* hide toggle button */
-#nav-wrap > a { display: none; }
-
-ul#nav {
-   min-height: 54px;
-   width: auto;
-
-   /* left align the menu */
-   text-align: left;
-}
-ul#nav li {
-	position: relative;
-	list-style: none;
-   height: 54px;
-
-   display: inline-block;
-}
-ul#nav > li.active a {
-   background: #11ABB0;
-}
-
-/* Links */
-ul#nav li a {
-   display: block;
-   padding: 0 14px;
-	text-decoration: none;
-   text-align: left;
-
-	-webkit-transition: color .2s ease-in-out;
-	-moz-transition: color .2s ease-in-out;
-	-o-transition: color .2s ease-in-out;
-	-ms-transition: color .2s ease-in-out;
-	transition: color .2s ease-in-out;
-}
-
-ul#nav li a:active { background-color: transparent !important; }
-
 
 /* ================================================================== */
 
 /* c. Intro Section
 
 /* ================================================================== */
-
-#intro {
-   background: #111 url(/images/intro-bg.jpg) no-repeat center;
-   overflow: hidden;
-}
-
-/* FlexSlider Intro Slider Styles */
-.slides {
-   max-height: 660px;
-   overflow: hidden;
-}
-.slider-text {
-	color: #737E8C;
-   text-align: center;
-   width: 85%;
-   margin: 156px auto 66px auto;
-}
-.slider-text h2 {
-   font: 56px/78px montserrat-regular, Sans-serif;
-   color: #fff;
-   text-shadow: 0px 1px 5px rgba(50, 50, 50, .5);
-   padding: 0;
-   margin: 0;
-}
-.slider-text h2 span,
-.slider-text a { color: #11ABB0; }
-
-.slider-text p {
-   font: 17px/36px opensans-light, sans-serif;
-   text-shadow: 0px 1px 2px rgba(0, 0, 0, .3);
-   padding: 0;
-   margin: 18px 10% 0;
-}
-
 
 /* Direction Navigation
 --------------------------------------------------------------- */
@@ -226,7 +139,6 @@ ul#nav li a:active { background-color: transparent !important; }
 	transition: all 0.2s ease-in-out;
 }
 
-.flex-direction-nav a:hover { background-color: #11ABB0; }
 
 .flex-direction-nav .flex-next {
 	right: 0px;
@@ -238,8 +150,6 @@ ul#nav li a:active { background-color: transparent !important; }
 	background: #2D3339 url(/images/direction-nav-left.png) no-repeat 47% 50%;
 	position: absolute;
 }
-.flexslider:hover .flex-next,
-.flexslider:hover .flex-prev { opacity: 1; }
 .flex-direction-nav .flex-disabled {
    opacity: .3 !important;
    filter: alpha(opacity=30);
@@ -261,7 +171,6 @@ ul#nav li a:active { background-color: transparent !important; }
 }
 
 #services a, #services a:visited  { color: #C4C4C4; }
-#services a:hover, #services a:focus { color: #11ABB0; }
 
 #services .section-head h2 { color: #11ABB0; }
 #services .section-head p.desc,
@@ -330,10 +239,6 @@ ul#nav li a:active { background-color: transparent !important; }
    margin-left: 7%;
 }
 
-/* on hover */
-.portfolio-item:hover .item-wrap { background-color: #0f9095; }
-.portfolio-item:hover h5 a { color: #fff !important; }
-
 
 /* Reveal Modal Plugin Styles
 ---------------------------------------------------*/
@@ -397,7 +302,6 @@ ul#nav li a:active { background-color: transparent !important; }
    letter-spacing: 3px;
    cursor: pointer;
 }
-.reveal-modal a:hover {	color: #00CCCC; }
 .reveal-modal a.close-reveal-modal { margin-left: 28px; }
 
 
@@ -415,7 +319,6 @@ ul#nav li a:active { background-color: transparent !important; }
 }
 
 #journal a, #journal a:visited  { color: #fff; }
-#journal a:hover, #journal a:focus { color: #005757; }
 
 #journal .section-head h2 { color: #fff; }
 #journal .section-head p.desc,
@@ -536,7 +439,6 @@ ul#nav li a:active { background-color: transparent !important; }
    margin-right: 15px;
 }
 #about .team-wrap .member-social li a { color: #8C8C8C; }
-#about .team-wrap .member-social li a:hover { color: #0f9095; }
 
 
 /* Testimonials
@@ -665,7 +567,6 @@ ul#nav li a:active { background-color: transparent !important; }
 }
 .post .post-meta a,
 .post .post-meta a:visited { color: #B9BBBC; }
-.post .post-meta a:hover,
 .post .post-meta a:focus { color: #11ABB0; }
 
 .post .post-meta .date {
@@ -750,7 +651,6 @@ ul#nav li a:active { background-color: transparent !important; }
    line-height: 30px;
 }
 .post .post-nav li a { color: #a3a3a3; }
-.post .post-nav li a:hover { color: #333; }
 .post .post-nav li strong {
    font: 15px/30px opensans-bold, sans-serif;
    text-transform: uppercase;
@@ -897,7 +797,6 @@ ol.commentlist {
 	-khtml-border-radius: 3px;
 	border-radius: 3px;
 }
-#comments form button.submit:hover { background: #3d4145; }
 #comments form span.required {
 	color: #11ABB0;
 	font-size: 13px;
@@ -922,7 +821,6 @@ ol.commentlist {
     line-height: 24px;
 }
 .bottom-nav li i { margin-left: 5px; }
-.bottom-nav li a:hover { color: #3d4145; }
 .bottom-nav .sep {
    font: 16px/36px opensans-light, sans-serif;
    margin: 0 6px;
@@ -947,7 +845,6 @@ ol.commentlist {
 }
 #blog-entries .post .entry-header h1 a,
 #blog-entries .post .entry-header h1 a:visited { color: #313131; }
-#blog-entries .post .entry-header h1 a:hover,
 #blog-entries .post .entry-header h1 a:focus { color: #11ABB0; }
 
 #blog-entries .post .post-content p {
@@ -974,7 +871,6 @@ ol.commentlist {
    -khtml-border-radius: 2px;
 	border-radius: 2px;
 }
-#blog-entries .post-content a.more-link:hover { background: #11ABB0; }
 #blog-entries .post-content a.more-link i { margin-left: 10px; }
 
 /* Pagination */
@@ -1003,7 +899,6 @@ ol.commentlist {
 }
 #bottom-block .blog-categories li.current a { color: #11ABB0; }
 #bottom-block .blog-categories a { color: #A0A6AB; }
-#bottom-block .blog-categories a:hover { color: #5B6167; }
 
 #bottom-block .back-to-top { text-align: right; }
 #bottom-block .back-to-top a i { margin-left: 6px; }
@@ -1026,7 +921,6 @@ footer {
    font-size: 14px;
 }
 footer a, footer a:visited { color: #0B686B; }
-footer a:hover, footer a:focus { color: #fff; }
 
 /* copyright */
 footer .copyright {

@@ -252,7 +252,6 @@ abbr {
    letter-spacing: .5px;
 	color: gray;
 }
-abbr:hover { cursor: help; }
 
 /* drop cap */
 .drop-cap:first-letter {
@@ -284,7 +283,6 @@ transition:color .3s ease-in-out;
 
 }
 
-a:hover, a:focus { color:#333; }
 p a, p a:visited { line-height: inherit; }
 
 
@@ -336,9 +334,6 @@ li p { }
 	font-family: montserrat-bold, sans-serif;
    border: none;
    color: #444;
-}
-.stats-tabs li a:hover {
-   color:#11ABB0;
 }
 .stats-tabs li a b {
 	display: block;
@@ -419,20 +414,7 @@ dd { margin: 0 0 0 20px; }
    -khtml-border-radius: 3px;
 	border-radius: 3px;
 }
-.pagination .page-numbers:hover {
-   background: #838A91;
-   color: #fff;
-}
-.pagination .current,
-.pagination .current:hover {
-	background-color: #11ABB0;
-   color: #fff;
-}
 .pagination .inactive,
-.pagination .inactive:hover {
-   background-color: #E6E8EB;
-	color: #A9ADB2;
-}
 .pagination .prev, .pagination .next {}
 
 /*  5. Images  --------------------------------------------------------- */
@@ -475,15 +457,6 @@ input[type="button"] {
    -webkit-border-radius: 3px;
    -khtml-border-radius: 3px;
    border-radius: 3px;
-}
-
-.button:hover,
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover {
-   background: #3d4145;
-   color: #fff;
 }
 
 .button:active,
