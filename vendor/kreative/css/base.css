@@ -25,106 +25,12 @@ e. Others
 /* ------------------------------------------------------------------ */
 /* a. Webfonts and Icon fonts
  ------------------------------------------------------------------ */
-
-@import url("fonts.css");
-@import url("font-awesome/css/font-awesome.min.css");
-
 /* ------------------------------------------------------------------
 /* b. Reset
       Adapted from:
       Normalize.css - https://github.com/necolas/normalize.css/
       HTML5 Doctor Reset - html5doctor.com/html-5-reset-stylesheet/
 /* ------------------------------------------------------------------ */
-
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-   margin: 0;
-   padding: 0;
-   border: 0;
-   outline: 0;
-   font-size: 100%;
-   vertical-align: baseline;
-   background: transparent;
-}
-
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-   display: block;
-}
-
-audio,
-canvas,
-video {
-   display: inline-block;
-}
-
-audio:not([controls]) {
-   display: none;
-   height: 0;
-}
-
-[hidden] { display: none; }
-
-code, kbd, pre, samp {
-   font-family: monospace, serif;
-   font-size: 1em;
-}
-
-pre {
-   white-space: pre;
-   white-space: pre-wrap;
-   word-wrap: break-word;
-}
-
-blockquote, q { quotes: &#8220 &#8220; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-   content: '';
-   content: none;
-}
-
-ins {
-   background-color: #ff9;
-   color: #000;
-   text-decoration: none;
-}
-
-mark {
-   background-color: #A7F4F6;
-   color: #555;
-}
-
-del { text-decoration: line-through; }
-
-abbr[title], dfn[title] {
-   border-bottom: 1px dotted;
-   cursor: help;
-}
-
-table {
-   border-collapse: collapse;
-   border-spacing: 0;
-}
-
-
-/* ------------------------------------------------------------------ */
-/* c. Default Styles
-      Adapted from:
-      Skeleton CSS Framework - http://www.getskeleton.com/
-      Typeplate Typographic Starter Kit - http://typeplate.com/
-/* ------------------------------------------------------------------ */
-
 /*  1. Basic  ------------------------------------------------------- */
 
 *,
@@ -203,7 +109,6 @@ blockquote cite {
 }
 blockquote cite:before { content: "\2014 \0020"; }
 blockquote cite a,
-blockquote cite a:visited { color: #8B9798; border: none }
 
 /* ---------------------------------------------------------------------
 /*  Pull Quotes Markup
@@ -270,20 +175,6 @@ hr { border: solid #E0E0E0; border-width: 1px 0 0; clear: both; margin: 11px 0 3
 
 
 /*  3. Links  ------------------------------------------------------- */
-
-a, a:visited {
-text-decoration: none;
-outline: 0;
-color:#11ABB0;
-
--webkit-transition:color .3s ease-in-out;
--moz-transition:color .3s ease-in-out;
--o-transition:color .3s ease-in-out;
-transition:color .3s ease-in-out;
-
-}
-
-p a, p a:visited { line-height: inherit; }
 
 
 /*  4. List  --------------------------------------------------------- */
@@ -715,12 +606,4 @@ col.collapsed { padding: 0; }
 .half-bottom { margin-bottom: 12px !important; }
 .add-bottom { margin-bottom: 24px !important; }
 .no-border { border: none; }
-
-.align-center { text-align: center; }
-.align-left   { text-align: left; }
-.align-right  { text-align: right; }
-.pull-left    { float: left; }
-.pull-right   { float: right; }
-
-
 

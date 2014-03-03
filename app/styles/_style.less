@@ -1,3 +1,4 @@
+@mainColor:                     #28b4e4;
 @transparentWhite:       rgba(255, 255, 255, 0.8);
 @darkCyan:                      #0f9095;
 @cyan:                           #11abb0;
@@ -16,6 +17,33 @@
 @navbarHeight:                     72px;
 @navbarWidth:                     100%;
 @vGutter:                          20px;
+
+@conceptFgColor:                  #838c95;
+@conceptBgColor:                  @grayLighter;
+@conceptHeaderColor:               @white;
+
+@targetFgColor:                  #838c95;
+@targetBgColor:                  #151719;
+@targetHeaderColor:               @white;
+
+@manifestoFgColor:             #7a7a7a;
+@manifestoBgColor:             #f3f3f3;
+@manifestoMetaColor:             #aaaaaa;
+
+@challengeFgColor:             @grayLight;
+@challengeBgColor:             @lightGrayishOrange;
+@challengeHeaderColor:             @mostlyDarkOrange;
+
+@grayBg:                       #fff url(/images/patterns/grey.png);
+@teamBg:                       @grayBg;
+@teamFgColor:                  @grayLight;
+
+@contactHeaderColor:           @mainColor;
+@contactFgColor:           #707B89;
+@contactBgColor:           #252920;
+
+@footerFgColor:            #303030;
+@footerBgColor:            @black;
 
 #nav {
 	height: @navbarHeight;
@@ -69,13 +97,6 @@
 	}
 }
 
-
-
-section.block {
-	padding-top: 156px;
-	padding-bottom: 120px;
-}
-
 #intro {
 	background: #111 url(/images/intro-bg.jpg) no-repeat center;
 	overflow: hidden;
@@ -96,7 +117,7 @@ section.block {
 			margin: 156px auto 66px auto;
 		}
 		span.highlight {
-			color: @cyan;
+			color: @mainColor;
 			font-size: 110%;
 			margin-left: 10px;
 			margin-right: 10px;
@@ -106,28 +127,33 @@ section.block {
 
 
 #concept {
-	h1, h2, h3 {
-		color: @white;
+	h1, h2, h3, h4, h5, h6 {
+		color: @conceptHeaderColor;
 	}
+	color: @conceptFgColor;
+	background-color: @conceptBgColor;
 }
 
 #target {
-	background-color: @grayLighter;
+	h1, h2, h3, h4, h5, h6 {
+		color: @targetHeaderColor;
+	}
+	color: @targetFgColor;
+	background-color: @targetBgColor;
 }
 
 #manifesto {
-	background-color: @darkCyan;
-	h1, h2, h3 {
-		color: @white;
+	background-color: @manifestoBgColor;
+	h1, h2, h3, h4, h5, h6 {
+		color: @black;
 	}
 
 	h3 {
-		color: @white;
 		font: 30px/42px montserrat-regular, sans-serif;
 	}
 
 	p {
-		color: @verySoftCyan;
+		color: @manifestoFgColor;
 	}
 
 	.entry-header {
@@ -153,7 +179,7 @@ section.block {
 
 	.post-meta {
 		font: 14px/24px opensans-regular, sans-serif;
-		color: #fff;
+		color: @manifestoMetaColor;
 		margin-top: 12px;
 		margin-bottom: 0;
 		time {
@@ -165,23 +191,18 @@ section.block {
 }
 
 #challenge {
-	background-color: @lightGrayishOrange;
-	h1, h2, h3 {
-		color: @mostlyDarkOrange;
+	color: @challengeFgColor;
+	background-color: @challengeBgColor;
+
+	h1, h2, h3, h4, h5, h6 {
+		color: @challengeHeaderColor;
 	}
 
 	h3 {
 		font: 30px/42px montserrat-regular, sans-serif;
 	}
-
-	p {
-		color: @grayLight;
-	}
-
 	.entry-header {
 		font: 30px/42px montserrat-regular, sans-serif;
-	}
-	.entry-header {
 		position: relative;
 		margin-bottom: 6px;
 	}
@@ -212,42 +233,17 @@ section.block {
 	}
 }
 
-#contact {
-	h1, h2, h3 {
-		color: @cyan;
-	}
-
-	background-color: #25292D;
-	padding-top: 108px;
-	padding-bottom: 120px;
-	color: #707B89;
-	a {
-		color: #c4c4c4;
-	}
-	a:hover, a:focus {
-		color: @cyan;
-	}
-}
-
 #team {
-	background: #fff url(/images/patterns/grey.png);
-	padding-top: 156px;
-	padding-bottom: 144px;
-	color: @grayLighter;
-	.section-head {
-		p {
-			color: @grayLight;
-		}
+	background: @teamBg;
+	color: @teamFgColor;
+	.name {
+		color: @mainColor;
 	}
 	h2, h3 {
 		font: 24px/30px montserrat-regular, sans-serif;
 		margin-top: 24px;
 		margin-bottom: 24px;
 		color: #6E6E6E;
-	}
-	p.introduction {
-		color: #999999;
-		font-size: 15px;
 	}
 	.process-wrap {
 		.col {
@@ -297,13 +293,51 @@ section.block {
 	}
 }
 
+#contact {
+	color: @contactFgColor;
+	background-color: @contactBgColor;
 
-// Footer
-.footer {
-  background-color: whitesmoke;
-  padding: 30px 0;
-  /* .box-shadow(inset 0 5px 15px rgba(0, 0, 0, .025)); */
+	h1, h2, h3, h4, h5 {
+		color: @contactHeaderColor;
+	}
+
+	a {
+		color: #c4c4c4;
+	}
+	a:hover, a:focus {
+		color: @mainColor;
+	}
 }
 
+
+a, a:visited {
+	color: @mainColor;
+}
+
+section.block {
+	padding-top: 156px;
+	padding-bottom: 120px;
+}
+
+// Footer
+footer, .footer {
+	color: @footerFgColor;
+	background-color: @footerBgColor;
+	padding: 30px 0;
+	border-top: 0px;
+
+	.copyright li {
+		display: inline-block;
+		line-height: 24px;
+		margin: 0;
+		padding: 0;
+	}
+	.social-links li {
+		display: inline-block;
+		line-height: 24px;
+		margin-right: 20px;
+		padding: 0;
+	}
+}
 
 
