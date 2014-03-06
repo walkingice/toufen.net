@@ -8,6 +8,15 @@
 @mostlyDarkOrange:              #a49360;
 @customGray:                    #727272;
 
+@softSpacing:                      0.05em;
+@titleColor:                      #868686;
+
+@heavyFgColor:                    #dadbdc;
+@heavyBgColor:                    #404345;
+
+@headerFontSize:                   30px;
+@headerLineHeight:                 42px;
+
 @topestLayer:                      9999;
 
 @navbarFrontColor:             @customGray;
@@ -19,19 +28,20 @@
 @vGutter:                          20px;
 
 @conceptFgColor:                  #838c95;
-@conceptBgColor:                  @grayLighter;
-@conceptHeaderColor:               @white;
+@conceptBgColor:                  #FAFAFA;
+@conceptHeaderColor:              @mainColor;
+@conceptIntroColor:               @grayLight;
 
 @targetFgColor:                  #838c95;
-@targetBgColor:                  #151719;
-@targetHeaderColor:               @white;
+@targetBgColor:                  @heavyBgColor;
+@targetHeaderColor:               @heavyFgColor;
 
 @manifestoFgColor:             #7a7a7a;
-@manifestoBgColor:             #f3f3f3;
+@manifestoBgColor:             #f6f6f6;
 @manifestoMetaColor:             #aaaaaa;
 
-@challengeFgColor:             @grayLight;
-@challengeBgColor:             @lightGrayishOrange;
+@challengeFgColor:             #626262;
+@challengeBgColor:             @white;
 @challengeHeaderColor:             @mostlyDarkOrange;
 
 @grayBg:                       #fff url(/images/patterns/grey.png);
@@ -39,8 +49,8 @@
 @teamFgColor:                  @grayLight;
 
 @contactHeaderColor:           @mainColor;
-@contactFgColor:           #707B89;
-@contactBgColor:           #252920;
+@contactFgColor:           @heavyFgColor;
+@contactBgColor:           @heavyBgColor;
 
 @footerFgColor:            #303030;
 @footerBgColor:            @black;
@@ -132,9 +142,32 @@
 	}
 	color: @conceptFgColor;
 	background-color: @conceptBgColor;
+	.title {
+		font-size: @headerFontSize;
+		line-height: @headerLineHeight;
+		color: @titleColor;
+	}
+	.desc {
+		letter-spacing: @softSpacing;
+	}
+	.intro {
+		p {
+			letter-spacing: @softSpacing;
+			color: @conceptIntroColor;
+			font-size: 22px;
+			line-height: 42px;
+		}
+	}
+
+	.content {
+		p {
+			color: #939ca5;
+		}
+	}
 }
 
 #target {
+	letter-spacing: @softSpacing;
 	h1, h2, h3, h4, h5, h6 {
 		color: @targetHeaderColor;
 	}
@@ -145,7 +178,7 @@
 #manifesto {
 	background-color: @manifestoBgColor;
 	h1, h2, h3, h4, h5, h6 {
-		color: @black;
+		color: @titleColor;
 	}
 
 	h3 {
@@ -234,6 +267,7 @@
 }
 
 #team {
+
 	background: @teamBg;
 	color: @teamFgColor;
 	.name {
@@ -251,7 +285,7 @@
 		}
 		h4 {
 			font: 15px/24px montserrat-bold, sans-serif;
-			letter-spacing: 1px;
+			letter-spacing: @softSpacing;
 			text-transform: uppercase;
 		}
 	}
