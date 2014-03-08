@@ -11,6 +11,8 @@
 @softSpacing:                      0.05em;
 @titleColor:                      #868686;
 
+@avatarSize:                       100px;
+
 @heavyFgColor:                    #dadbdc;
 @heavyBgColor:                    #404345;
 
@@ -25,7 +27,9 @@
 
 @navbarHeight:                     72px;
 @navbarWidth:                     100%;
+@hGutter:                          20px;
 @vGutter:                          20px;
+@vGutterLarge:                          42px;
 
 @conceptFgColor:                  #838c95;
 @conceptBgColor:                  #FAFAFA;
@@ -157,6 +161,12 @@
 			font-size: 22px;
 			line-height: 42px;
 		}
+		p.ending {
+			letter-spacing: 0.1em;
+			font-size: 20px;
+			line-height: 20px;
+			text-align: right;
+		}
 	}
 
 	.content {
@@ -173,12 +183,25 @@
 	}
 	color: @targetFgColor;
 	background-color: @targetBgColor;
+
+	.intro {
+		text-align: center;
+		margin-left: 20%;
+		margin-right: 20%;
+		margin-bottom: @vGutterLarge;
+	}
 }
 
 #manifesto {
 	background-color: @manifestoBgColor;
 	h1, h2, h3, h4, h5, h6 {
 		color: @titleColor;
+	}
+	.intro {
+		text-align: center;
+		margin-left: 20%;
+		margin-right: 20%;
+		margin-bottom: @vGutterLarge;
 	}
 
 	h3 {
@@ -234,6 +257,12 @@
 	h3 {
 		font: 30px/42px montserrat-regular, sans-serif;
 	}
+	.intro {
+		text-align: center;
+		margin-left: 20%;
+		margin-right: 20%;
+		margin-bottom: @vGutterLarge;
+	}
 	.entry-header {
 		font: 30px/42px montserrat-regular, sans-serif;
 		position: relative;
@@ -270,9 +299,6 @@
 
 	background: @teamBg;
 	color: @teamFgColor;
-	.name {
-		color: @mainColor;
-	}
 	h2, h3 {
 		font: 24px/30px montserrat-regular, sans-serif;
 		margin-top: 24px;
@@ -289,40 +315,28 @@
 			text-transform: uppercase;
 		}
 	}
-	.team-wrap {
-		margin-bottom: 24px;
 
-		.col {
-			margin-bottom: 24px;
+	.member {
+		img {
+			width: @avatarSize;
+			height: @avatarSize;
+			-moz-border-radius: 100% 100% 100% 100%;
+			-webkit-border-radius: 100% 100% 100% 100%;
+			-khtml-border-radius: 100% 100% 100% 100%;
+			border-radius: 100% 100% 100% 100%;
 		}
-		h5 {
-			font: 14px/24px montserrat-bold, sans-serif;
+		.summary {
+			margin-top: @vGutter;
+			margin-bottom: @vGutter;
 		}
-		span {
-			position: relative;
-			top: -6px;
-			font-size: 13px;
-			line-height: 18px;
-			color: #969696;
+		.name {
+			margin-right: @hGutter;
 		}
-		.member-social {
-			font-size: 14px;
-			font-weight: normal;
-			line-height: 18px;
-			color: #969696;
-			margin: 0;
-			padding: 0;
-
-	 		li {
-				display: inline-block;
-				margin-right: 15px;
-	 			a {
-					color: #8C8C8C;
-	 			}
-				a:hover {
-					color: #0f9095;
-				}
-			}
+		.title {
+		}
+		.special {
+			font-size: @headerFontSize;
+			color: @mainColor;
 		}
 	}
 }
@@ -350,7 +364,7 @@ a, a:visited {
 
 section.block {
 	padding-top: 156px;
-	padding-bottom: 120px;
+	padding-bottom: 200px;
 }
 
 // Footer
