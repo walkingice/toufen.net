@@ -112,9 +112,17 @@
 }
 
 #intro {
-	background: #111 url(/images/intro-bg.jpg) no-repeat center;
+	background: #111 url(/imgs/bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	overflow: hidden;
-	color: #737E8C;
+
+	min-height: 800px;
+	color: @white;
+	text-shadow: 0px 0px 15px @black;
+
 	#intro-wrap {
 		text-align: center;
 		width: 85%;
@@ -123,7 +131,7 @@
 			color: @white;
 			font: 76px/78px montserrat-regular, Sans-serif;
 			color: #fff;
-			text-shadow: 0px 1px 5px rgba(50, 50, 50, .5);
+			text-shadow: 0px 1px 5px @black;
 		}
 		.slides {
 			max-height: 660px;
