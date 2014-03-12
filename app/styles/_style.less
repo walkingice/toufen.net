@@ -21,6 +21,11 @@
 
 @topestLayer:                      9999;
 
+@introTitleFontSize:               76px;
+@introTitleLineHeight:             60px;
+
+@introFontFamily:       monsterrat-regular, Sans-serif;
+
 @navbarFrontColor:             @customGray;
 @navbarBackColor:             @white;
 @navbarActiveFrontColor:           @grayDark;
@@ -126,17 +131,29 @@
 	#intro-wrap {
 		text-align: center;
 		width: 85%;
-		margin: 256px auto 166px auto;
+		margin: 206px auto 166px auto;
 		h1, h2, h3 {
 			color: @white;
-			font: 76px/78px montserrat-regular, Sans-serif;
-			color: #fff;
-			text-shadow: 0px 1px 5px @black;
+			font: @introTitleFontSize/@introTitleLineHeight @introFontFamily;
+			text-shadow:  1px 0px 10px @black, 0px 1px 5px @black;
+			margin-top: 5px;
+			margin-botom: 5px;
 		}
-		.slides {
-			max-height: 660px;
-			overflow: hidden;
-			margin: 156px auto 66px auto;
+		.block-target {
+			color: @white;
+			font-size: 22px;
+			margin-top: 5px;
+			margin-botom: 5px;
+		}
+		.block-area {
+			color: @black;
+			text-shadow: 0px 0px 5px @white, 0px 0px 5px @white;
+			font-size: 18px;
+			margin-top: 15px;
+			margin-botom: 5px;
+		}
+		p.comment {
+			margin-top: 100px;
 		}
 		span.highlight {
 			color: @mainColor;
