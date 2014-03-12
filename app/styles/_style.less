@@ -1,7 +1,8 @@
 @largeScreenWidth:                1200px;
-@smallScreenWidth:                 800px;
-@mobileWideWidth:                  767px;
-@mobileNarrowWidth:                460px;
+@middleScreenWidth:                800px;
+@smallScreenWidth:                 460px;
+
+@maxWidth:                        1180px;
 
 
 @mainColor:                     #28b4e4;
@@ -31,6 +32,7 @@
 @navbarActiveFrontColor:           @grayDark;
 
 @navbarHeight:                     72px;
+@navbarHeightSmall:                42px;
 @navbarWidth:                     100%;
 @hGutter:                          20px;
 @vGutter:                          20px;
@@ -148,11 +150,19 @@ col.collapsed { padding: 0; }
 /*--- responsive ---*/
 
 @media only screen and (max-width: @smallScreenWidth) {
+	.row {
+		width: 100%;
+	}
+
+	div#nav {
+		height: @navbarHeightSmall;
+		display: none;
+	}
 }
 
-@media only screen and (max-width: @mobileWideWidth) {
+@media only screen and (max-width: @middleScreenWidth) {
 	.row {
-		width: 460px;
+		width: @smallScreenWidth;
 		margin: 0 auto;
 		padding: 0;
 		/* Offsets */
@@ -182,18 +192,16 @@ col.collapsed { padding: 0; }
 			}
 		}
 	}
-}
 
-@media only screen and (max-width: @mobileNarrowWidth) {
-	.row {
-		width: 100%;
+	div#nav {
+		height: @navbarHeight;
 	}
 }
 
 @media screen and (min-width: @largeScreenWidth) {
-	.wide{
+	.wide {
 		.row {
-			max-width: 1180px;
+			max-width: @maxWidth;
 		}
 		.col {
 			padding: 0 20px;
@@ -204,7 +212,6 @@ col.collapsed { padding: 0; }
 /* end of responsive */
 
 #nav {
-	height: @navbarHeight;
 	width: @navbarWidth;
 	position: fixed;
 	top: 0;
@@ -218,6 +225,7 @@ col.collapsed { padding: 0; }
 		outline: none;
 	}
 	ul.nav {
+		display: inline;
 		margin-left: 180px;
 		min-height:  @navbarHeight;
 		li {
