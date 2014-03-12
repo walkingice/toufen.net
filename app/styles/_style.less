@@ -1,10 +1,10 @@
+@largeScreenWidth:                1200px;
+@smallScreenWidth:                 800px;
+@mobileWideWidth:                  767px;
+@mobileNarrowWidth:                460px;
+
+
 @mainColor:                     #28b4e4;
-@transparentWhite:       rgba(255, 255, 255, 0.8);
-@darkCyan:                      #0f9095;
-@cyan:                           #11abb0;
-@verySoftCyan:                  #c2f1f5;
-@lightGrayishOrange:            #f6f4ef;
-@grayishOrange:                 #c0b491;
 @mostlyDarkOrange:              #a49360;
 @customGray:                    #727272;
 
@@ -63,6 +63,145 @@
 
 @footerFgColor:            #303030;
 @footerBgColor:            @black;
+
+
+/*--- basic ---*/
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* row clearing */
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+.row:after {
+    clear: both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.row { *zoom: 1; }
+
+
+/* removed gutters */
+.row.collapsed .col,
+col.collapsed { padding: 0; }
+
+/* If you'll be using IE8, use class ".last" in nested comlumns.
+   ":last-child" is not supported in IE8 */
+.ie .row .row .last { padding-right: 0; }
+
+.row {
+	.row {
+		width: auto;
+		max-width: 100%
+	}
+	/*--- desktop ---*/
+	max-width: 1008px;
+	margin: 0 auto;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	/* column widths */
+	.one-twelfth,     .g-1     { width: 8.33333%; }
+	.one-sixth,       .g-2     { width: 16.66667%; }
+	.one-fourth,      .g-3     { width: 25%; }
+	.one-third,       .g-4     { width: 33.33333%; }
+	.five-twelfths,   .g-5     { width: 41.66667%; }
+	.half,            .g-6     { width: 50%; }
+	.seven-twelfths,  .g-7     { width: 58.33333%; }
+	.two-thirds,      .g-8     { width: 66.66667%; }
+	.three-fourths,   .g-9     { width: 75%; }
+	.five-sixths,     .g-10    { width: 83.33333%; }
+	.eleven-twelfths, .g-11    { width: 91.66667%; }
+	.full,            .g-12    { width: 100%; }
+	/* Offsets */
+	.offset-1    { margin-left: 8.33333%; }
+	.offset-2    { margin-left: 16.66667%; }
+	.offset-3    { margin-left: 25%; }
+	.offset-4    { margin-left: 33.33333%; }
+	.offset-5    { margin-left: 41.66667%; }
+	.offset-6    { margin-left: 50%; }
+	.offset-7    { margin-left: 58.33333%; }
+	.offset-8    { margin-left: 66.66667%; }
+	.offset-9    { margin-left: 75%; }
+	.offset-10   { margin-left: 83.33333%; }
+	.offset-11   { margin-left: 91.66667%; }
+}
+
+
+.col {
+	position: relative;
+	padding: 0 18px;
+	float: left;
+	/* removed nested columns paddings */
+	.col:first-child { padding-left: 0; }
+	.col:last-child { padding-right: 0; }
+}
+
+
+
+/*--- responsive ---*/
+
+@media only screen and (max-width: @smallScreenWidth) {
+}
+
+@media only screen and (max-width: @mobileWideWidth) {
+	.row {
+		width: 460px;
+		margin: 0 auto;
+		padding: 0;
+		/* Offsets */
+		.offset-1    { margin-left: 0%; }
+		.offset-2    { margin-left: 0%; }
+		.offset-3    { margin-left: 0%; }
+		.offset-4    { margin-left: 0%; }
+		.offset-5    { margin-left: 0%; }
+		.offset-6    { margin-left: 0%; }
+		.offset-7    { margin-left: 0%; }
+		.offset-8    { margin-left: 0%; }
+		.offset-9    { margin-left: 0%; }
+		.offset-10   { margin-left: 0%; }
+		.offset-11   { margin-left: 0%; }
+	}
+	.col {
+		width: 100% !important;
+		float: none;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0 20px;
+		/* for nested columns */
+		.row {
+			width: 100%;
+			.col {
+				padding: 0;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: @mobileNarrowWidth) {
+	.row {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: @largeScreenWidth) {
+	.wide{
+		.row {
+			max-width: 1180px;
+		}
+		.col {
+			padding: 0 20px;
+		}
+	}
+}
+
+/* end of responsive */
 
 #nav {
 	height: @navbarHeight;
@@ -412,5 +551,4 @@ footer, .footer {
 		padding: 0;
 	}
 }
-
 
