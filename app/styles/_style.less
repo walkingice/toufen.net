@@ -313,11 +313,24 @@ col.collapsed { padding: 0; }
 
 
 #concept {
+	color: @conceptFgColor;
+	background-color: @conceptBgColor;
+
 	h1, h2, h3, h4, h5, h6 {
 		color: @conceptHeaderColor;
 	}
-	color: @conceptFgColor;
-	background-color: @conceptBgColor;
+	span.title {
+		margin-left: @vGutter;
+		color: @conceptHeaderColor;
+	}
+
+	p {
+		margin-top: 15px;
+	}
+
+	i.icon {
+		font-size: @headerFontSize;
+	}
 	.title {
 		font-size: @headerFontSize;
 		line-height: @headerLineHeight;
@@ -325,6 +338,9 @@ col.collapsed { padding: 0; }
 	}
 	.desc {
 		letter-spacing: @softSpacing;
+	}
+	.content {
+		margin-top: @vGutterLarge;
 	}
 	.intro {
 		p {
