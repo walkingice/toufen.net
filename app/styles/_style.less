@@ -217,7 +217,7 @@ col.collapsed { padding: 0; }
 
 }
 
-@media only screen and (max-width: @middleScreenWidth) and (min-width: @smallScreenWidth){
+@media only screen and (max-width: @largeScreenWidth) and (min-width: @smallScreenWidth){
 	.row {
 		width: 100%;
 		margin: 0 auto;
@@ -360,55 +360,6 @@ col.collapsed { padding: 0; }
 			a {
 				color: @navbarActiveFrontColor;
 			}
-		}
-	}
-}
-
-#intro {
-	background: #111 url(/imgs/bg.jpg) no-repeat center center fixed;
-
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	overflow: hidden;
-
-	min-height: 800px;
-	color: @white;
-	text-shadow: 0px 0px 15px @black;
-
-	#intro-wrap {
-		text-align: center;
-		width: 85%;
-		margin: 206px auto 166px auto;
-		h1, h2, h3 {
-			color: @white;
-			font: @introTitleFontSize/@introTitleLineHeight @introFontFamily;
-			text-shadow:  1px 0px 10px @black, 0px 1px 5px @black;
-			margin-top: 25px;
-			margin-bottom: 10px;
-		}
-		.block-target {
-			color: @white;
-			font-size: 22px;
-			margin-top: 5px;
-			margin-botom: 5px;
-		}
-		.block-area {
-			color: @black;
-			text-shadow: 0px 0px 5px @white, 0px 0px 5px @white;
-			font-size: 18px;
-			margin-top: 15px;
-			margin-botom: 5px;
-		}
-		p.comment {
-			margin-top: 100px;
-		}
-		span.highlight {
-			color: @mainColor;
-			font-size: 110%;
-			margin-left: 10px;
-			margin-right: 10px;
 		}
 	}
 }

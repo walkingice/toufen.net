@@ -1,0 +1,85 @@
+@media only screen and (max-width: @smallScreenWidth) {
+	#intro {
+		background: #111 url(/imgs/bg.jpg) no-repeat center center fixed;
+		min-height: 400px;
+		#intro-wrap {
+			width: 85%;
+			margin: 206px auto 166px auto;
+			h1, h2, h3 {
+				margin-top: 25px;
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: @largeScreenWidth) and (min-width: @smallScreenWidth){
+	#intro {
+		background: #111 url(/imgs/bg.jpg) no-repeat center center fixed;
+		min-height: 800px;
+		#intro-wrap {
+			width: 85%;
+			margin: 206px auto 166px auto;
+			h1, h2, h3 {
+				margin-top: 25px;
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+@media only screen and (min-width: @largeScreenWidth) {
+	#intro {
+		background: #111 url(/imgs/bg.jpg) no-repeat center center fixed;
+		min-height: 800px;
+		#intro-wrap {
+			width: 85%;
+			margin: 206px auto 166px auto;
+			h1, h2, h3 {
+				margin-top: 25px;
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+#intro {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	overflow: hidden;
+
+	color: @white;
+	text-shadow: 0px 0px 15px @black;
+
+	#intro-wrap {
+		text-align: center;
+		h1, h2, h3 {
+			color: @white;
+			font: @introTitleFontSize/@introTitleLineHeight @introFontFamily;
+			text-shadow:  1px 0px 10px @black, 0px 1px 5px @black;
+		}
+		.block-target {
+			color: @white;
+			font-size: 22px;
+			margin-top: 5px;
+			margin-botom: 5px;
+		}
+		.block-area {
+			color: @black;
+			text-shadow: 0px 0px 5px @white, 0px 0px 5px @white;
+			font-size: 18px;
+			margin-top: 15px;
+			margin-botom: 5px;
+		}
+		p.comment {
+			margin-top: 100px;
+		}
+		span.highlight {
+			color: @mainColor;
+			font-size: 110%;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+	}
+}
+
