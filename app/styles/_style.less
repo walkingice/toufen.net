@@ -214,6 +214,10 @@ col.collapsed { padding: 0; }
 			}
 		}
 	}
+	section.sec {
+		padding-top: @vGutterLarge;
+		padding-bottom: @vGutterLarge;
+	}
 
 }
 
@@ -258,7 +262,7 @@ col.collapsed { padding: 0; }
 					color: @mainColor;
 					font-size: 20px;
 					display: inline-block;
-					width: 70%;
+					width: 60%;
 					text-align: center;
 				}
 				li.item {
@@ -276,6 +280,10 @@ col.collapsed { padding: 0; }
 		width: 100%;
 		padding-left: 0px;
 		padding-right: 0px;
+	}
+	section.sec {
+		padding-top: 156px;
+		padding-bottom: 200px;
 	}
 }
 
@@ -307,7 +315,13 @@ col.collapsed { padding: 0; }
 			padding: 0 20px;
 		}
 	}
+
+	section.sec {
+		padding-top: 156px;
+		padding-bottom: 200px;
+	}
 }
+
 
 /* end of responsive */
 
@@ -369,33 +383,17 @@ col.collapsed { padding: 0; }
 	color: @conceptFgColor;
 	background-color: @conceptBgColor;
 
-	h1, h2, h3, h4, h5, h6 {
-		color: @conceptHeaderColor;
-	}
-	span.title {
-		margin-left: @vGutter;
-		color: @conceptHeaderColor;
-	}
-
-	p {
-		margin-top: 15px;
-	}
-
-	i.icon {
-		font-size: @headerFontSize;
-	}
-	.title {
+	.sec-title {
 		font-size: @headerFontSize;
 		line-height: @headerLineHeight;
 		color: @titleColor;
 	}
-	.desc {
+
+	.sec-desc {
 		letter-spacing: @softSpacing;
 	}
-	.content {
-		margin-top: @vGutterLarge;
-	}
-	.intro {
+
+	.sec-comment {
 		p {
 			letter-spacing: @softSpacing;
 			color: @conceptIntroColor;
@@ -410,80 +408,76 @@ col.collapsed { padding: 0; }
 		}
 	}
 
-	.content {
-		p {
-			color: #939ca5;
-		}
+	.block {
+		margin-top: @vGutterLarge;
 	}
+
+	.block-title {
+		margin-left: @vGutter;
+		color: @conceptHeaderColor;
+		font-size: @headerFontSize;
+	}
+
+	.block-content {
+		margin-top: @vGutter;
+	}
+
+	i.icon {
+		font-size: @headerFontSize;
+	}
+
 }
 
 #target {
 	letter-spacing: @softSpacing;
-	h1, h2, h3, h4, h5, h6 {
-		color: @targetHeaderColor;
-	}
 	color: @targetFgColor;
 	background-color: @targetBgColor;
 
-	.intro {
+	.sec-intro {
 		text-align: center;
 		margin-left: 20%;
 		margin-right: 20%;
 		margin-bottom: @vGutterLarge;
+	}
+
+	.sec-title {
+		color: @targetHeaderColor;
+	}
+
+	.block-title {
+		color: @targetHeaderColor;
+		font-size: 20px;
+		margin-top: @vGutterLarge;
+		margin-bottom: @vGutter;
 	}
 }
 
 #manifesto {
 	background-color: @manifestoBgColor;
-	h1, h2, h3, h4, h5, h6 {
+	.sec-intro {
 		color: @titleColor;
-	}
-	.intro {
 		text-align: center;
 		margin-left: 20%;
 		margin-right: 20%;
 		margin-bottom: @vGutterLarge;
 	}
 
-	h3 {
+	.sec-title {
+		color: @titleColor;
+	}
+
+	.block {
+		margin-top: @vGutterLarge;
+	}
+
+	.block-title {
+		color: @titleColor;
 		font: 30px/42px montserrat-regular, sans-serif;
 	}
 
-	p {
+	.block-content {
 		color: @manifestoFgColor;
-	}
-
-	.entry-header {
-		font: 30px/42px montserrat-regular, sans-serif;
-	}
-	.entry-header {
-		position: relative;
-		margin-bottom: 6px;
-	}
-	.author-image img {
-		position: absolute;
-		top: 12px;
-		left: 18px;
-		margin: 0;
-		padding: 0;
-		width: 60px;
-		height: 60px;
-		-moz-border-radius: 100% 100% 100% 100%;
-		-webkit-border-radius: 100% 100% 100% 100%;
-		-khtml-border-radius: 100% 100% 100% 100%;
-		border-radius: 100% 100% 100% 100%;
-	}
-
-	.post-meta {
-		font: 14px/24px opensans-regular, sans-serif;
-		color: @manifestoMetaColor;
-		margin-top: 12px;
-		margin-bottom: 0;
-		time {
-			font-family: montserrat-bold, sans-serif;
-			text-transform: uppercase;
-			letter-spacing: 1px;
-		}
+		margin-top: @vGutter;
 	}
 }
 
@@ -491,55 +485,38 @@ col.collapsed { padding: 0; }
 	color: @challengeFgColor;
 	background-color: @challengeBgColor;
 
-	h1, h2, h3, h4, h5, h6 {
-		color: @challengeHeaderColor;
-	}
-
-	h3 {
-		font: 30px/42px montserrat-regular, sans-serif;
-	}
-	.intro {
+	.sec-intro {
 		text-align: center;
 		margin-left: 20%;
 		margin-right: 20%;
 		margin-bottom: @vGutterLarge;
 	}
+
+	.sec-title {
+		color: @challengeHeaderColor;
+		font: 30px/42px montserrat-regular, sans-serif;
+	}
+
+	.block {
+		margin-top: @vGutterLarge;
+	}
+
 	img {
 		display: block;
-		margin-top: @hGutter;
-		margin-bottom: @hGutter;
+		margin-top: @vGutter;
+		margin-bottom: @vGutterLarge;
 		margin-right: auto;
 		margin-left: auto;
 	}
-	.entry-header {
+
+	.block-title {
+		color: @challengeHeaderColor;
 		font: 30px/42px montserrat-regular, sans-serif;
-		position: relative;
-		margin-bottom: 6px;
-	}
-	.author-image img {
-		position: absolute;
-		top: 12px;
-		left: 18px;
-		margin: 0;
-		padding: 0;
-		width: 60px;
-		height: 60px;
-		-moz-border-radius: 100% 100% 100% 100%;
-		-webkit-border-radius: 100% 100% 100% 100%;
-		-khtml-border-radius: 100% 100% 100% 100%;
-		border-radius: 100% 100% 100% 100%;
 	}
 
-	.post-meta {
-		font: 14px/24px opensans-regular, sans-serif;
-		color: #fff;
-		margin-top: 12px;
-		margin-bottom: 0;
-		time {
-			font-family: montserrat-bold, sans-serif;
-			text-transform: uppercase;
-			letter-spacing: 1px;
-		}
+	.block-content {
+		color: @manifestoFgColor;
+		margin-top: @vGutter;
 	}
 }
 
@@ -547,28 +524,30 @@ col.collapsed { padding: 0; }
 
 	background: @teamBg;
 	color: @teamFgColor;
-	h2, h3 {
+	.sec-intro {
+		margin-bottom: @vGutterLarge;
+	}
+
+	.sec-title {
 		font: 24px/30px montserrat-regular, sans-serif;
 		margin-top: 24px;
 		margin-bottom: 24px;
 		color: #6E6E6E;
 	}
-	.section-head {
-		margin-bottom: @vGutterLarge;
+
+	.sec-desc {
+		letter-spacing: @softSpacing;
 	}
-	.process-wrap {
-		.col {
-			width: 25%;
-		}
-		h4 {
-			font: 15px/24px montserrat-bold, sans-serif;
-			letter-spacing: @softSpacing;
-			text-transform: uppercase;
-		}
+
+	.sec-comment {
+	}
+
+	.block {
+		margin-top: @vGutterLarge;
+		margin-bottom: @vGutterLarge;
 	}
 
 	.member {
-		margin-bottom: @vGutterLarge;
 		img {
 			width: @avatarSize;
 			height: @avatarSize;
@@ -584,7 +563,8 @@ col.collapsed { padding: 0; }
 		.name {
 			margin-right: @hGutter;
 		}
-		.title {
+		.introduction {
+			margin-top: @vGutter;
 		}
 		.special {
 			font-size: @headerFontSize;
@@ -597,26 +577,14 @@ col.collapsed { padding: 0; }
 	color: @contactFgColor;
 	background-color: @contactBgColor;
 
-	h1, h2, h3, h4, h5 {
+	.sec-title {
 		color: @contactHeaderColor;
-	}
-
-	a {
-		color: #c4c4c4;
-	}
-	a:hover, a:focus {
-		color: @mainColor;
 	}
 }
 
 
 a, a:visited {
 	color: @mainColor;
-}
-
-section.block {
-	padding-top: 156px;
-	padding-bottom: 200px;
 }
 
 // Footer
