@@ -12,10 +12,55 @@
 		letter-spacing: @softSpacing;
 	}
 
+	.block {
+	}
+
+	.block-title {
+		color: @conceptHeaderColor;
+		font-size: @headerFontSize;
+	}
+
+	.block-content {
+	}
+
+	i.icon {
+		margin-right: @vGutter;
+		font-size: @headerFontSize;
+	}
+
 	.sec-comment {
 		p {
+		}
+		p.ending {
+			text-align: right;
+		}
+	}
+
+}
+
+
+@media only screen and (max-width: @smallScreenWidth) {
+	.sec-comment {
+		margin-top: @vGutterLarge;
+		p {
 			letter-spacing: @softSpacing;
+			font-size: 18px;
+		}
+		p.ending {
+			letter-spacing: 0.1em;
+			font-size: 14px;
+		}
+	}
+
+}
+
+
+@media only screen and (max-width: @largeScreenWidth) and (min-width: @smallScreenWidth){
+	.sec-comment {
+		margin-top: @vGutterLarge;
+		p {
 			color: @conceptIntroColor;
+			letter-spacing: @softSpacing;
 			font-size: 22px;
 			line-height: 42px;
 		}
@@ -23,26 +68,24 @@
 			letter-spacing: 0.1em;
 			font-size: 20px;
 			line-height: 20px;
-			text-align: right;
 		}
 	}
 
-	.block {
-		margin-top: @vGutterLarge;
-	}
+}
 
-	.block-title {
-		margin-left: @vGutter;
-		color: @conceptHeaderColor;
-		font-size: @headerFontSize;
-	}
-
-	.block-content {
-		margin-top: @vGutter;
-	}
-
-	i.icon {
-		font-size: @headerFontSize;
+@media screen and (min-width: @largeScreenWidth) {
+	.sec-comment {
+		p {
+			color: @conceptIntroColor;
+			letter-spacing: @softSpacing;
+			font-size: 22px;
+			line-height: 42px;
+		}
+		p.ending {
+			letter-spacing: 0.1em;
+			font-size: 20px;
+			line-height: 20px;
+		}
 	}
 
 }
