@@ -1,0 +1,81 @@
+#team {
+	background: @teamBg;
+	color: @teamFgColor;
+	.sec-intro {
+		text-align: left;
+	}
+
+	.sec-title {
+		font: 24px/30px montserrat-regular, sans-serif;
+		margin-top: @vGutter;
+		margin-bottom: @vGutter;
+		color: #6E6E6E;
+	}
+
+	.sec-desc {
+		letter-spacing: @softSpacing;
+	}
+
+	.sec-comment {
+	}
+
+	.block {
+		margin-top: @vGutterLarge;
+		margin-bottom: @vGutterLarge;
+	}
+
+	.member {
+		img {
+			width: @avatarSize;
+			height: @avatarSize;
+			-moz-border-radius: 100% 100% 100% 100%;
+			-webkit-border-radius: 100% 100% 100% 100%;
+			-khtml-border-radius: 100% 100% 100% 100%;
+			border-radius: 100% 100% 100% 100%;
+		}
+		.name {
+			margin-right: @hGutter;
+		}
+		.introduction {
+			margin-top: @vGutter;
+		}
+		.special {
+			font-size: @headerFontSize;
+			color: @mainColor;
+		}
+	}
+}
+
+
+
+@media only screen and (max-width: @smallScreenWidth) {
+	.summary {
+		margin-top: @vGutter;
+		margin-bottom: @vGutter;
+	}
+}
+
+
+@media only screen and (max-width: @largeScreenWidth) and (min-width: @smallScreenWidth){
+	.summary {
+		display: inline-block;
+		margin-top: 200px;
+		margin-left: @hGutter;
+	}
+
+	.introduction {
+	}
+	.summary {
+		margin-top: @vGutter;
+		margin-bottom: @vGutter;
+	}
+}
+
+@media screen and (min-width: @largeScreenWidth) {
+	.summary {
+		margin-top: @vGutter;
+		margin-bottom: @vGutter;
+	}
+
+}
+
