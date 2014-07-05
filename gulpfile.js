@@ -80,7 +80,7 @@ gulp.task('extras', function () {
 });
 
 gulp.task('clean', function () {
-    return gulp.src([TMP, OUTPUT], { read: false }).pipe($.clean());
+    return gulp.src([TMP, OUTPUT], { read: false }).pipe($.rimraf());
 });
 
 gulp.task('build', ['html', 'images', 'extras']);
