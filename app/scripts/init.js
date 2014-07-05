@@ -2,7 +2,7 @@
 (function (angular) {
     'use strict';
     var app;
-    app = angular.module('toufen.net', []);
+    app = angular.module('toufen.net', ['ui.bootstrap']);
 
     //app.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
     //    $urlRouterProvider.otherwise("/list");
