@@ -1,23 +1,23 @@
 // Team Section
-#team.sec.row
-  .col-sm-2
-  .col-sm-8
+#team.row.section
+  .col-sm-1.col-md-2
+  .col-sm-10.col-md-8
     .row
-      .col-sm-3.sec-intro.text-center
+      .col-sm-3.sec-intro.text-center.block
         h2.sec-title 我們這支團隊
         p.sec-comment 我們就是你
-      .col-sm-9
-        p
+      .col-sm-9.block
+        p.sec-desc
           | 團隊成員都是在地長大的青年，與以往的專業選舉團隊不同，我們多來自政治以外的其他領域，
           | 本著對家鄉的熱愛，希望貢獻自己的一己之長。如果您認同我們的理念，很歡迎您一同來參與改變
-        p
+        p.sec-desc
           | 我們多有自己的本業與收入，在工作之餘參與公眾事務，並不依靠政治的紅利維生。
           | 我們就像你，白天也需要趕著時間上班，週末偶爾要加班。為孩子張羅尿布奶粉的時候也會想著如何帶給他更好的生活。
           | 也因此才會有這個團隊，我們希望參與公眾事務來改善我們的環境
           | 借鏡於電腦自由軟體界的社群概念，這樣的團隊不應該只是寥寥幾位與民意代表熟識的人，
           | 相反地應該要建立制度，鼓勵任何有意願的人都能夠成為團隊的一份子。
     .row
-      .col-sm-6
+      .col-sm-6.member.block
         .member.block
           img(src='imgs/team_hcl.jpg', alt='')
           .summary
@@ -25,68 +25,61 @@
             span.title.special 鎮民代表參選人
             p.introduction
               | 后庄國小、君毅中學、大葉大學畢業。兩個孩子的爸，竹科工程師。
-              p
+            p
               | 從十二年國教的事情之後，理解到孩子的未來與政策息息相關，因而開始關心政治。
-      .col-sm-6
-        .member.block
-          img(src='imgs/team_zhuang.jpg', alt='zhuang')
-          .summary
-            span.name 莊子宗
-            span.title 工程師
-            p.introduction
-              | 交大電子研究所畢。青春、熱血！大海 我的家！
+      .col-sm-6.member.block
+        img(src='imgs/team_zhuang.jpg', alt='zhuang')
+        .summary
+          span.name 莊子宗
+          span.title 工程師
+          p.introduction
+            | 交大電子研究所畢。青春、熱血！大海 我的家！
     .row
-      .col-sm-6
-        .member.block
-          img(src='imgs/team_peng.jpg', alt='Peng')
-          .summary
-            span.name 彭建能
-            span.title 金融業
-            p.introduction
-              | 實踐大學企管系畢。
-              | 堅持、改變；小處著眼，邁向未來
-      .col-sm-6
-        .member.block
-          img(src='imgs/team_johnny.jpg', alt='Johnny')
-          .summary
-            span.name 蔡宗益
-            span.title 中央大學營建管理博士候選人
-            p.introduction
-              | 微胖。努力尋找生活小確幸
+      .col-sm-6.member.block
+        img(src='imgs/team_peng.jpg', alt='Peng')
+        .summary
+          span.name 彭建能
+          span.title 金融業
+          p.introduction
+            | 實踐大學企管系畢。
+            | 堅持、改變；小處著眼，邁向未來
+      .col-sm-6.member.block
+        img(src='imgs/team_johnny.jpg', alt='Johnny')
+        .summary
+          span.name 蔡宗益
+          span.title 中央大學營建管理博士候選人
+          p.introduction
+            | 微胖。努力尋找生活小確幸
     .row
-      .col-sm-6
-        .member.block
-          img(src='imgs/team_chang.jpg', alt='Chang')
-          .summary
-            span.name 張仕慧
-            span.title 逢甲環境工程與科學研究所
-            p.introduction
-              | 澳洲遊學回來後，人生開始不一樣，因為我學會勇敢面對一切。
-      .col-sm-6
-        .member.block
-          img(src='imgs/team_lo.jpg', alt='Lo')
-          .summary
-            span.name 駱宇承
-            span.title 金融服務業 業務襄理
-            p.introduction
-              | 台北大學通訊工程研究所畢。願意付出、熱心公益、樂於學習與分享。
+      .col-sm-6.member.block
+        img(src='imgs/team_chang.jpg', alt='Chang')
+        .summary
+          span.name 張仕慧
+          span.title 逢甲環境工程與科學研究所
+          p.introduction
+            | 澳洲遊學回來後，人生開始不一樣，因為我學會勇敢面對一切。
+      .col-sm-6.member.block
+        img(src='imgs/team_lo.jpg', alt='Lo')
+        .summary
+          span.name 駱宇承
+          span.title 金融服務業 業務襄理
+          p.introduction
+            | 台北大學通訊工程研究所畢。願意付出、熱心公益、樂於學習與分享。
     .row
-      .col-sm-6
-        .member.block
-          img(src='imgs/team_kingba.jpg', alt='King Ba')
-          .summary
-            span.name 黃士瑋
-            span.title 電子業 製程工程師
-            p.introduction
-              | 逢甲大學機電系畢
-              | 生命該浪費在美好與對的事物上。
-      .col-sm-6
-        .member.block
-          img(src='imgs/team_julian.jpg', alt='Sakura Haruno')
-          .summary
-            span.name 朱立傑
-            span.title 軟體工程師
-            p.introduction
-              | 東海資工畢。熱愛自由軟體，深信開放、透明與公民力量。
-  .col-sm-2
+      .col-sm-6.member.block
+        img(src='imgs/team_kingba.jpg', alt='King Ba')
+        .summary
+          span.name 黃士瑋
+          span.title 電子業 製程工程師
+          p.introduction
+            | 逢甲大學機電系畢
+            | 生命該浪費在美好與對的事物上。
+      .col-sm-6.member.block
+        img(src='imgs/team_julian.jpg', alt='Sakura Haruno')
+        .summary
+          span.name 朱立傑
+          span.title 軟體工程師
+          p.introduction
+            | 東海資工畢。熱愛自由軟體，深信開放、透明與公民力量。
+  .col-sm-1.col-md-2
 

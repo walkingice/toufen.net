@@ -9,19 +9,10 @@
 		font: 24px/30px montserrat-regular, sans-serif;
 		margin-top: @padding-base-vertical;
 		margin-bottom: @padding-base-vertical;
-		color: #6E6E6E;
 	}
 
 	.sec-desc {
 		letter-spacing: @softSpacing;
-	}
-
-	.sec-comment {
-	}
-
-	.block {
-		margin-top: @padding-base-vertical;
-		margin-bottom: @padding-base-vertical;
 	}
 
 	.member {
@@ -32,6 +23,9 @@
 			-webkit-border-radius: 100% 100% 100% 100%;
 			-khtml-border-radius: 100% 100% 100% 100%;
 			border-radius: 100% 100% 100% 100%;
+		}
+		.summary {
+			padding: 10px;
 		}
 		.name {
 			margin-right: @padding-base-horizontal;
@@ -47,35 +41,24 @@
 }
 
 
-
-@media only screen and (max-width: @smallScreenWidth) {
+@media (max-width: @screen-sm-max) {
+	.member {
+		img {
+			float: left;
+		}
+		.summary {
+			margin-left: @avatarSize;
+			min-height: @avatarSize;
+		}
+	}
+}
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
 	.summary {
-		margin-top: @padding-base-vertical;
-		margin-bottom: @padding-base-vertical;
+	}
+}
+@media (min-width: @screen-lg-min) {
+	.summary {
 	}
 }
 
-
-@media only screen and (max-width: @largeScreenWidth) and (min-width: @smallScreenWidth){
-	.summary {
-		display: inline-block;
-		margin-top: 200px;
-		margin-left: @padding-base-horizontal;
-	}
-
-	.introduction {
-	}
-	.summary {
-		margin-top: @padding-base-vertical;
-		margin-bottom: @padding-base-vertical;
-	}
-}
-
-@media screen and (min-width: @largeScreenWidth) {
-	.summary {
-		margin-top: @padding-base-vertical;
-		margin-bottom: @padding-base-vertical;
-	}
-
-}
 

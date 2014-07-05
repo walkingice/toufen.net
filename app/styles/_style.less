@@ -42,13 +42,13 @@
 @targetBgColor:                  @heavyBgColor;
 @targetHeaderColor:               @heavyFgColor;
 
+@manifestoHeaderColor:         #7a7a7a;
 @manifestoFgColor:             #7a7a7a;
 @manifestoBgColor:             #f6f6f6;
-@manifestoMetaColor:             #aaaaaa;
 
+@challengeHeaderColor:             @mostlyDarkOrange;
 @challengeFgColor:             #626262;
 @challengeBgColor:             @white;
-@challengeHeaderColor:             @mostlyDarkOrange;
 
 @grayBg:                       #fff url(/imgs/grey.png);
 @teamBg:                       @grayBg;
@@ -65,6 +65,16 @@
 @fbMediumBlue:             #6D84B4;
 @fbLighterBlue:            #AFBDD4;
 @fbLightestBlue:           #D8DFEA;
+
+@xsSectionPadding:            30px;
+@smSectionPadding:            50px;
+@mdSectionPadding:            80px;
+@lgSectionPadding:           100px;
+
+@xsBlockPadding:            10px;
+@smBlockPadding:            10px;
+@mdBlockPadding:            20px;
+@lgBlockPadding:            20px;
 
 
 /* for navbar*/
@@ -121,3 +131,43 @@
 	padding-right: @padding-xs-vertical;
 }
 
+@media (max-width: @screen-xs-max) {
+	.section {
+		padding-top: @xsSectionPadding;
+		padding-bottom: @xsSectionPadding;
+	}
+	.block {
+		padding-top: @xsBlockPadding;
+		padding-bottom: @xsBlockPadding;
+	}
+}
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+	.section {
+		padding-top: @smSectionPadding;
+		padding-bottom: @smSectionPadding;
+	}
+	.block {
+		padding-top: @smBlockPadding;
+		padding-bottom: @smBlockPadding;
+	}
+}
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+	.section {
+		padding-top: @mdSectionPadding;
+		padding-bottom: @mdSectionPadding;
+	}
+	.block {
+		padding-top: @mdBlockPadding;
+		padding-bottom: @mdBlockPadding;
+	}
+}
+@media (min-width: @screen-lg-min) {
+	.section {
+		padding-top: @lgSectionPadding;
+		padding-bottom: @lgSectionPadding;
+	}
+	.block {
+		padding-top: @lgBlockPadding;
+		padding-bottom: @lgBlockPadding;
+	}
+}
