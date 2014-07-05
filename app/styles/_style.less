@@ -31,9 +31,6 @@
 @navbarBackColor:             @white;
 @navbarActiveFrontColor:           @grayDark;
 
-@navbarHeight:                     72px;
-@navbarHeightSmall:                42px;
-@navbarWidth:                     100%;
 @hGutter:                          20px;
 @vGutter:                          20px;
 @vGutterLarge:                          42px;
@@ -71,3 +68,16 @@
 @fbLighterBlue:            #AFBDD4;
 @fbLightestBlue:           #D8DFEA;
 
+
+/* for navbar*/
+.navbar-logo {
+	@elementHeight: 32px;
+	padding: ((@navbarHeight - @elementHeight) / 2 - 2) 20px ((@navbarHeight - @elementHeight) / 2 + 2);
+	img {
+		padding-right: 10px;
+	}
+}
+
+.highlight {
+	color: @mainColor;
+}

@@ -3,18 +3,15 @@
 #nav
   nav.navbar.navbar-default.navbar-fixed-top(role="navigation" ng-controller="NavbarCtrl")
     .container-fluid
-      #bs-example-navbar-collapse-1.collapse.navbar-collapse
-      <!-- Brand and toggle get grouped for better mobile display -->
+      a.navbar-logo.navbar-brand(href='/')
+        img(alt='', src='imgs/logo_s.png')
+        span.highlight 頭份青年強
       .navbar-header
         button.navbar-toggle( ng-click="toggleNavbar()")
           span.sr-only Toggle navigation
           span.icon-bar
           span.icon-bar
           span.icon-bar
-        span.navbar-brand
-          a(href='#')
-            img(alt='', src='imgs/logo_s.png')
-          span 頭份青年強
       .collapse.navbar-collapse(ng-class="{'in':!navCollapsed}")
         ul.nav.navbar-nav
           li.item
