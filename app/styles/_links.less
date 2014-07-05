@@ -1,9 +1,9 @@
 #links {
 	color: @fbBlue;
 	background-color: @heavyBgColor;
-	.sec-intro {
-		margin-bottom: 0px;
-	}
+	padding-top: @font-size-large;
+	padding-bottom: @font-size-large;
+	font-size: @font-size-large;
 	a {
 		color: @white;
 	}
@@ -14,46 +14,9 @@
 		margin-bottom: 5px;
 	}
 	span.link {
-		margin-left: @hGutter;
-		margin-right: @hGutter;
+		margin-left: @padding-base-horizontal;
+		margin-right: @padding-base-horizontal;
 		font-weight: bold;
-	}
-}
-
-
-@media only screen and (max-width: @smallScreenWidth) {
-	#links.sec {
-		padding-top: @vGutter;
-		padding-bottom: @vGutter;
-	}
-	.sec-title {
-		font-size: 16px;
-	}
-	span.link {
-		display: block;
-		margin-top: 5px;
-		margin-bottom: 5px;
-	}
-}
-
-
-@media only screen and (max-width: @largeScreenWidth) and (min-width: @smallScreenWidth){
-	#links.sec {
-		padding-top: @vGutter;
-		padding-bottom: @vGutter;
-	}
-	.sec-title {
-		font-size: 20px;
-	}
-}
-
-@media screen and (min-width: @largeScreenWidth) {
-	#links.sec {
-		padding-top: @vGutterLarge;
-		padding-bottom: @vGutterLarge;
-	}
-	.sec-title {
-		font-size: 20px;
 	}
 }
 

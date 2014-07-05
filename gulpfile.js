@@ -18,7 +18,7 @@ gulp.task('jade', function () {
         .pipe(gulp.dest(TMP + '/'));
 });
 
-gulp.task('styles', function () {
+gulp.task('styles', ['fonts'], function () {
     return gulp.src(['app/styles/app.less'])
         .pipe($.less({
             paths: [ path.join(__dirname, 'less', 'includes') ]
@@ -39,7 +39,7 @@ gulp.task('html', ['jade', 'styles', 'scripts'], function () {
     var jsFilter = $.filter('**/*.js');
     var cssFilter = $.filter('**/*.css');
 
-    return gulp.src(['app/*.html', TMP + '/**/*.html'])
+    return gulp.src(['app/*.html', TMP + '/**/*.html', TMP + '/**/*.{eot,svg,ttf,woff}'])
         .pipe($.useref.assets({searchPath: '{' + TMP + ',app}'}))
         .pipe(jsFilter)
         .pipe($.uglify())
@@ -67,10 +67,10 @@ gulp.task('images', function () {
 });
 
 gulp.task('fonts', function () {
-    return $.bowerFiles()
+    return gulp.src(['app/bower_components/**'], { dot: true })
         .pipe($.filter('**/*.{eot,svg,ttf,woff}'))
         .pipe($.flatten())
-        .pipe(gulp.dest(OUTPUT + '/fonts'))
+        .pipe(gulp.dest(TMP + '/fonts'))
         .pipe($.size());
 });
 

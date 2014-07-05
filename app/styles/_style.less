@@ -8,6 +8,8 @@
 @mainColor:                     #28b4e4;
 @mostlyDarkOrange:              #a49360;
 @customGray:                    #727272;
+@white:                         #FFFFFF;
+@black:                         #000000;
 
 @softSpacing:                      0.05em;
 @titleColor:                      #868686;
@@ -29,16 +31,12 @@
 
 @navbarFrontColor:             @customGray;
 @navbarBackColor:             @white;
-@navbarActiveFrontColor:           @grayDark;
-
-@hGutter:                          20px;
-@vGutter:                          20px;
-@vGutterLarge:                          42px;
+@navbarActiveFrontColor:           @gray-dark;
 
 @conceptFgColor:                  #838c95;
 @conceptBgColor:                  #FAFAFA;
 @conceptHeaderColor:              @mainColor;
-@conceptIntroColor:               @grayLight;
+@conceptIntroColor:               @gray-light;
 
 @targetFgColor:                  #838c95;
 @targetBgColor:                  @heavyBgColor;
@@ -54,7 +52,7 @@
 
 @grayBg:                       #fff url(/imgs/grey.png);
 @teamBg:                       @grayBg;
-@teamFgColor:                  @grayLight;
+@teamFgColor:                  @gray-light;
 
 @contactHeaderColor:           @mainColor;
 @contactFgColor:           @heavyFgColor;
@@ -70,9 +68,9 @@
 
 
 /* for navbar*/
-.navbar-logo {
-	@elementHeight: 32px;
-	padding: ((@navbarHeight - @elementHeight) / 2 - 2) 20px ((@navbarHeight - @elementHeight) / 2 + 2);
+.navbar-brand {
+	@elementHeight: 42px;
+	padding: ((@navbar-height - @elementHeight) / 2 - 2) 20px ((@navbar-height - @elementHeight) / 2 + 2) !important;
 	img {
 		padding-right: 10px;
 	}
@@ -81,3 +79,45 @@
 .highlight {
 	color: @mainColor;
 }
+
+/* variable from Bootstrap */
+.padding-h {
+	padding-left:  @padding-base-horizontal;
+	padding-right:  @padding-base-horizontal;
+}
+
+.padding-v {
+	padding-top: @padding-base-vertical;
+	padding-bottom:  @padding-base-vertical;
+}
+
+.padding-h-small {
+	padding-left: @padding-small-horizontal;
+	padding-right: @padding-small-horizontal;
+}
+
+.padding-v-small {
+	padding-left: @padding-small-vertical;
+	padding-right: @padding-small-vertical;
+}
+
+.padding-h-large {
+	padding-left: @padding-large-horizontal;
+	padding-right: @padding-large-horizontal;
+}
+
+.padding-v-large {
+	padding-left: @padding-large-vertical;
+	padding-right: @padding-large-vertical;
+}
+
+.padding-h-xs {
+	padding-left: @padding-xs-horizontal;
+	padding-right: @padding-xs-horizontal;
+}
+
+.padding-v-xs {
+	padding-left: @padding-xs-vertical;
+	padding-right: @padding-xs-vertical;
+}
+
