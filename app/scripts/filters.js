@@ -1,9 +1,6 @@
-'use strict';
 /* Filters*/
+(function (angular) {
+    'use strict';
+    var mod = angular.module('appFilters', []);
+})(window.angular);
 
-angular.module('twFilters', [])
-.filter('interpolate', function(version) {
-	return function(text) {
-		return String(text).replace(/\%VERSION\%/mg, version);
-	};
-});

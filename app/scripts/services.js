@@ -1,7 +1,6 @@
-'use strict';
-/* Sevices*/
+/* Sevices */
+(function (angular) {
+    'use strict';
+    var mod = angular.module('appServices', []);
+})(window.angular);
 
-angular.module('twServices', [])
-.factory('version', function() {
-	return "0.1";
-});

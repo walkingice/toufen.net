@@ -1,9 +1,6 @@
-'use strict';
 /* Directives*/
+(function (angular) {
+    'use strict';
+    var mod = angular.module('appDirectives', [appServices]);
+})(window.angular);
 
-angular.module('twDirectives', ['twServices'])
-.directive('appVersion', function(version) {
-	return function(scope, elm, attrs) {
-		return elm.text(version);
-	};
-});

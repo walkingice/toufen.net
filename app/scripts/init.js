@@ -1,7 +1,9 @@
-'use strict';
-(function () {
+/* app */
+(function (angular) {
+    'use strict';
     var app;
     app = angular.module('toufen.net', []);
+
     //app.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
     //    $urlRouterProvider.otherwise("/list");
     //    $stateProvider
@@ -19,5 +21,5 @@
     //});
     //return $locationProvider.html5Mode(false);
     //});
-})();
+})(window.angular);
 
