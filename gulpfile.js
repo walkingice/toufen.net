@@ -45,7 +45,7 @@ gulp.task('html', ['jade', 'styles', 'scripts'], function () {
         .pipe($.uglify())
         .pipe(jsFilter.restore())
         .pipe(cssFilter)
-        .pipe($.csso())
+        .pipe($.minifyCss())
         .pipe(cssFilter.restore())
         .pipe($.rev())
         .pipe($.useref.restore())
