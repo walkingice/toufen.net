@@ -2,6 +2,7 @@
 // generated on 2014-06-15 using generator-gulp-webapp 0.1.0
 
 var gulp = require('gulp'),
+    recipe = require('./plugins/gulp-recipe'),
     path = require('path');
 
 // load plugins
@@ -10,6 +11,11 @@ var $ = require('gulp-load-plugins')();
 var PORT = 5000,
     OUTPUT = '_public',
     TMP = '_tmp';
+
+gulp.task('recipe', function () {
+    return gulp.src(['app/sample.html'])
+        .pipe(gulp.dest(TMP + '/'));
+});
 
 gulp.task('jade', function () {
     // render jade files excepts templates
