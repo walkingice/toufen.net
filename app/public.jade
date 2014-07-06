@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    title 頭份青年強
+    meta(charset='utf-8')
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    <meta content="頭份青年強" property="og:site_name">
+    <meta content="頭份青年強" property="og:title">
+    <meta content="http://toufen.net" property="og:url">
+    <meta content="website" property="og:type">
+    <meta content="http://toufen.net/imgs/logo_og.png" property="og:image">
+    <meta content="頭份鎮民代表參選人 黎煥強的公開資訊" property="og:description">
+    // Mobile Specific Metas
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+
+    include common/ie_js
+    include common/css
+
+    // Favicons
+    link(rel='shortcut icon', href='favicon.ico')
+
+  body.container-fluid(ng-app="toufen.net" data-spy='scroll', data-target='#nav-wrap')
+    include partials/nav
+
+    include partials/public_info
+
+    include partials/footer
+    include common/vendor_js
+    include common/app_js
+

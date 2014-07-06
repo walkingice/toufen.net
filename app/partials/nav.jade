@@ -3,7 +3,7 @@
 #nav
   nav.navbar.navbar-default.navbar-fixed-top(role="navigation" ng-controller="NavbarCtrl")
     .container-fluid
-      a.navbar-logo.navbar-brand(href='/')
+      a.navbar-logo.navbar-brand(href='/#')
         img(alt='', src='imgs/logo_s.png')
         span.highlight 頭份青年強
       .navbar-header
@@ -12,21 +12,23 @@
           span.icon-bar
           span.icon-bar
           span.icon-bar
+        a.navbar-toggle.btn.btn-link(href="/public.html") 資訊公開
       .collapse.navbar-collapse(ng-class="{'in':!navCollapsed}")
         ul.nav.navbar-nav
           li.item(ng-click="toggleNavbar()")
-            a(href='#intro') 介紹
+            a(href='/#concept') 理念
           li.item(ng-click="toggleNavbar()")
-            a(href='#concept') 理念
+            a(href='/#target') 目標
           li.item(ng-click="toggleNavbar()")
-            a(href='#target') 目標
+            a(href='/#manifesto') 政見
           li.item(ng-click="toggleNavbar()")
-            a(href='#manifesto') 政見
+            a(href='/#challenge') 困境
           li.item(ng-click="toggleNavbar()")
-            a(href='#challenge') 困境
+            a(href='/#team') 團隊
           li.item(ng-click="toggleNavbar()")
-            a(href='#team') 團隊
-          li.item(ng-click="toggleNavbar()")
-            a(href='#contact') 聯絡
+            a(href='/#contact') 聯絡
+        ul.nav.navbar-nav.navbar-right
+          li.item
+            a.btn.btn-link(href="/public.html") 資訊公開
 
 // Navbar End
