@@ -1,6 +1,6 @@
-@media only screen and (max-width: @smallScreenWidth) {
+@media only screen and (max-width: @screen-sm-max) {
 	#intro {
-		background: #111 url(/imgs/bg.jpg) no-repeat center center fixed;
+		background: #111 url(/imgs/bg-xs.jpg) no-repeat center center fixed;
 		min-height: 600px;
 		#intro-wrap {
 			width: 85%;
@@ -30,9 +30,10 @@
 		}
 	}
 }
-@media only screen and (max-width: @largeScreenWidth) and (min-width: @smallScreenWidth){
+
+@media only screen and (min-width: @screen-md-min) and (max-width: @screen-md-max){
 	#intro {
-		background: #111 url(/imgs/bg.jpg) no-repeat center center fixed;
+		background: #111 url(/imgs/bg-sm.jpg) no-repeat center center fixed;
 		min-height: 800px;
 		#intro-wrap {
 			width: 85%;
@@ -62,7 +63,8 @@
 		}
 	}
 }
-@media only screen and (min-width: @largeScreenWidth) {
+
+@media only screen and (min-width: @screen-lg-min) {
 	#intro {
 		background: #111 url(/imgs/bg.jpg) no-repeat center center fixed;
 		min-height: 800px;
