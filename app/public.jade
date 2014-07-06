@@ -22,6 +22,25 @@ html
   body.container-fluid(ng-app="toufen.net" data-spy='scroll', data-target='#nav-wrap')
     include partials/nav
 
+    .section.row
+      .col-sm-3.col-md-4
+      .col-sm-6.col-md-4
+        div.block.text-center
+          h1 關於資訊公開
+        p
+          | 資訊的透明化是我們的信念之一。我們深信透明化資訊是促進民主的重要因素。
+        p
+          | 以往那種「父母官替百姓打理一切」的時代已經過去，
+          | 台灣既然要邁向真正的人民作主，政府的各項作為理當要轉化成清晰且透明的資訊，
+          | 提供給人民已作為監督政府的利器。
+        p
+          | 即便我們只是眾多參選人的其中一組，仍應揭露我們與選舉相關的資訊，
+          | 因為這是我們的信念與態度，不論當選與否，我們都應該做到。
+        p
+          | 我們將支出與收入
+          span.small.text-muted (如果有的話....)
+          |全數公佈於此，希望能讓您更了解我們，進而支持我們。
+      .col-sm-3.col-md-4
     include partials/public_info
 
     include partials/footer
