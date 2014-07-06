@@ -7,26 +7,26 @@
         img(alt='', src='imgs/logo_s.png')
         span.highlight 頭份青年強
       .navbar-header
-        button.navbar-toggle( ng-click="toggleNavbar()")
+        button.navbar-toggle(ng-click="toggleNavbar()")
           span.sr-only Toggle navigation
           span.icon-bar
           span.icon-bar
           span.icon-bar
       .collapse.navbar-collapse(ng-class="{'in':!navCollapsed}")
         ul.nav.navbar-nav
-          li.item
+          li.item(ng-click="toggleNavbar()")
             a(href='#intro') 介紹
-          li.item
+          li.item(ng-click="toggleNavbar()")
             a(href='#concept') 理念
-          li.item
+          li.item(ng-click="toggleNavbar()")
             a(href='#target') 目標
-          li.item
+          li.item(ng-click="toggleNavbar()")
             a(href='#manifesto') 政見
-          li.item
+          li.item(ng-click="toggleNavbar()")
             a(href='#challenge') 困境
-          li.item
+          li.item(ng-click="toggleNavbar()")
             a(href='#team') 團隊
-          li.item
+          li.item(ng-click="toggleNavbar()")
             a(href='#contact') 聯絡
 
 // Navbar End
