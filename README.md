@@ -1,14 +1,12 @@
 # Introduction
 
-This is a fork from [Angular Brunch Skeleton](https://github.com/scotch/angular-brunch-seed) to help myself to build simple web page with
+網站 toufen.net 的原始碼，使用到的東西如下
 
 * Pure Javascript
 * Angularjs
 * Jade template
 * LESS
-* Deploy to heroku
-
-Chinese Omelet is one kind of my favorite breakfast.
+* Gulp
 
 # Install
 
@@ -19,7 +17,11 @@ To install needed package by commands
 
 # Run
 
-To run
+To run in local
 
-    $ npm start
+    $ node_modules/.bin/gulp watch
+
+# License
+
+MIT
 
