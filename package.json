@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "connect": "^2.14.4",
+    "through2" : "^0.5.1",
     "gulp": "~3.6.0",
     "path": "~0.4.9",
     "gulp-angular-templatecache": "~1.0",
@@ -37,6 +38,7 @@
     "gulp-size": "^0.3.0",
     "gulp-uglify": "^0.3.0",
     "gulp-useref": "^0.4.2",
+    "gulp-util": "^2.2.19",
     "jshint-stylish": "^0.2.0",
     "wiredep": "^1.4.3"
   }
