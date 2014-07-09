@@ -14,6 +14,7 @@ var PORT = 5000,
 
 gulp.task('recipe', function () {
     return gulp.src(['app/sample.html'])
+        .pipe(recipe({cookAbsDir: __dirname + '/scripts'}))
         .pipe(gulp.dest(TMP + '/'));
 });
 

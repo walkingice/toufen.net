@@ -2,35 +2,35 @@
 var through = require('through2');
 var gutil = require('gulp-util');
 var PluginError = gutil.PluginError;
+var recipeBlock = /\<!--\s*recipe:.*--\>/;
+var recipePattern = /\<!--\s*recipe:(.+?) .*--\>/;
+var paramsPattern = /\<!--\s*recipe:.+? ingredients:\[(.+?)\].*--\>/;
+
+var cook = require('../scripts/render_cost.js');
 
 // Consts
 const PLUGIN_NAME = 'gulp-recipe';
 
-function prefixStream(prefixText) {
-  var stream = through();
-  stream.write(prefixText);
-  return stream;
-}
-
 // Plugin level function(dealing with files)
-function gulpRecipe(prefixText) {
+function gulpRecipe(opts) {
 
-  if (!prefixText) {
-    throw new PluginError(PLUGIN_NAME, "Missing prefix text!");
-  }
-  prefixText = new Buffer(prefixText); // allocate ahead of time
+  opts = !!opts ? opts : {cookAbsDir: __dirname + '/'}
 
   // Creating a stream through which each file will pass
   var stream = through.obj(function(file, enc, callback) {
     if (file.isNull()) {
        // Do nothing if no contents
     }
-    if (file.isBuffer()) {
-        file.contents = Buffer.concat([prefixText, file.contents]);
-    }
 
-    if (file.isStream()) {
-        file.contents = file.contents.pipe(prefixStream(prefixText));
+    if (file.isBuffer()) {
+        var contents = String(file.contents);
+        if (contents.match(recipeBlock)) {
+            var recipe = recipePattern.exec(contents)[1];
+            var params = paramsPattern.exec(contents)[1].split(',');
+            var cooker = require(opts.cookAbsDir + '/' + recipe);
+            var result = cooker.apply(cooker, params);
+            file.contents = new Buffer(contents.replace(recipeBlock, result));
+        }
     }
 
     this.push(file);
