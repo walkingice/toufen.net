@@ -12,15 +12,17 @@ var PORT = 5000,
     OUTPUT = '_public',
     TMP = '_tmp';
 
-gulp.task('recipe', function () {
-    return gulp.src(['app/sample.html'])
-        .pipe(recipe({cookAbsDir: __dirname + '/scripts'}))
+gulp.task('dynamic', function () {
+    //return gulp.src(['app/sample.jade'])
+    return gulp.src(['app/public.jade'])
+        .pipe($.jade())
+        .pipe(recipe({cookDir: 'scripts'}))
         .pipe(gulp.dest(TMP + '/'));
 });
 
 gulp.task('jade', function () {
     // render jade files excepts templates
-    return gulp.src(['app/**/*.jade', '!app/**/_*.jade', '!app/common/**/*.jade', '!app/partials/**/*.jade'])
+    return gulp.src(['app/**/*.jade', '!app/public.jade', '!app/**/_*.jade', '!app/common/**/*.jade', '!app/partials/**/*.jade'])
         .pipe($.jade())
         .pipe(gulp.dest(TMP + '/'));
 });
@@ -73,6 +75,12 @@ gulp.task('images', function () {
         .pipe($.size());
 });
 
+gulp.task('jsons', function () {
+    return gulp.src('app/data/**/*.json')
+        .pipe(gulp.dest(OUTPUT + '/data'))
+        .pipe($.size());
+});
+
 gulp.task('fonts', function () {
     return gulp.src(['app/bower_components/**'], { dot: true })
         .pipe($.filter('**/*.{eot,svg,ttf,woff}'))
@@ -90,13 +98,13 @@ gulp.task('clean', function () {
     return gulp.src([TMP, OUTPUT], { read: false }).pipe($.rimraf());
 });
 
-gulp.task('build', ['html', 'images', 'extras']);
+gulp.task('build', ['dynamic', 'html', 'images', 'extras', 'jsons']);
 
 gulp.task('default', ['clean'], function () {
     gulp.start('build');
 });
 
-gulp.task('connect',['jade', 'styles', 'scripts', 'images', 'extras'], function () {
+gulp.task('connect',['jade', 'dynamic', 'styles', 'scripts', 'images', 'extras'], function () {
     var connect = require('connect');
     var app = connect()
         .use(connect.static('app'))

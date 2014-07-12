@@ -41,7 +41,17 @@ html
           span.small.text-muted (如果有的話....)
           |全數公佈於此，希望能讓您更了解我們，進而支持我們。
       .col-sm-3.col-md-4
+
     include partials/public_info
+
+    .section.row
+      .col-sm-3.col-md-4
+      .col-sm-6.col-md-4
+        h1 公開資料
+        ul
+          li
+            a(href="/data/cost.json") cost.json
+      .col-sm-6.col-md-4
 
     include partials/footer
     include common/vendor_js

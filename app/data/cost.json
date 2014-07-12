@@ -1,0 +1,82 @@
+{
+    "fields": {
+        "name": "名稱",
+        "price": "金額",
+        "datetime" : "時間",
+        "comment": "備註"
+    },
+    "entries" :[
+        {
+            "name"     : "Domain name",
+            "price"    : 562,
+            "datetime" : "2014/02/22",
+            "comment"  : "toufen.net 網址。僅有電子發票"
+        }, {
+            "name"     : "競選團隊背心",
+            "price"    : 6000,
+            "datetime" : "2014/03/14",
+            "comment"  : "團隊 20 件，參選人 2 件"
+        }, {
+            "name"     : "T-shirt",
+            "price"    : 1266,
+            "datetime" : "2014/03/14",
+            "comment"  : "慢跑 T-shirt"
+        }, {
+            "name"     : "面紙",
+            "price"    : 1890,
+            "datetime" : "2014/04/23",
+            "comment"  : "2000 包"
+        }, {
+            "name"     : "文具",
+            "price"    : 543,
+            "datetime" : "2014/04/23",
+            "comment"  : "看板製作"
+        }, {
+            "name"     : "面紙",
+            "price"    : 3087,
+            "datetime" : "2014/05/05",
+            "comment"  : "3000 包"
+        }, {
+            "name"     : "DM",
+            "price"    : 840,
+            "datetime" : "2014/05/05",
+            "comment"  : "500 份，第一次試印"
+        }, {
+            "name"     : "名片",
+            "price"    : 900,
+            "datetime" : "2014/05/17",
+            "comment"  : ""
+        }, {
+            "name"     : "LED 燈板",
+            "price"    : 1389,
+            "datetime" : "2014/05/21",
+            "comment"  : ""
+        }, {
+            "name"     : "LED 燈泡",
+            "price"    : 500,
+            "datetime" : "2014/06/06",
+            "comment"  : ""
+        }, {
+            "name"     : "DM",
+            "price"    : 600,
+            "datetime" : "2014/06/12",
+            "comment"  : "250 份試印"
+        }, {
+            "name"     : "面紙",
+            "price"    : 4200,
+            "datetime" : "2014/06/17",
+            "comment"  : "6000 包"
+        }, {
+            "name"     : "DM",
+            "price"    : 3800,
+            "datetime" : "2014/06",
+            "comment"  : "4000 份"
+        }, {
+            "name"     : "荷葉扇",
+            "price"    : 15000,
+            "datetime" : "2014/06",
+            "comment"  : "2000 份"
+        }
+    ]
+}
+
