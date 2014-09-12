@@ -73,9 +73,24 @@
             "comment"  : "4000 份"
         }, {
             "name"     : "荷葉扇",
-            "price"    : 15000,
+            "price"    : 14000,
             "datetime" : "2014/06",
             "comment"  : "2000 份"
+        }, {
+            "name"     : "保證金",
+            "price"    : 50000,
+            "datetime" : "2014/09/05",
+            "comment"  : ""
+        }, {
+            "name"     : "餐費",
+            "price"    : 920,
+            "datetime" : "2014/09/05",
+            "comment"  : "支付工作人員用餐費用"
+        }, {
+            "name"     : "餐費",
+            "price"    : 5300,
+            "datetime" : "2014/09/05",
+            "comment"  : "支付工作人員用餐費用"
         }
     ]
 }

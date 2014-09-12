@@ -37,9 +37,7 @@ html
           | 即便我們只是眾多參選人的其中一組，仍應揭露我們與選舉相關的資訊，
           | 因為這是我們的信念與態度，不論當選與否，我們都應該做到。
         p
-          | 我們將支出與收入
-          span.small.text-muted (如果有的話....)
-          |全數公佈於此，希望能讓您更了解我們，進而支持我們。
+          | 我們將支出與收入全數公佈於此，希望能讓您更了解我們，進而支持我們。
       .col-sm-3.col-md-4
 
     include partials/public_info
@@ -51,6 +49,8 @@ html
         ul
           li
             a(href="/data/cost.json") cost.json
+          li
+            a(href="/data/contributions.json") contributions.json
       .col-sm-6.col-md-4
 
     include partials/footer
