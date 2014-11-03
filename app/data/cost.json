@@ -91,6 +91,46 @@
             "price"    : 5300,
             "datetime" : "2014/09/05",
             "comment"  : "支付工作人員用餐費用"
+        }, {
+            "name"     : "旗幟布料",
+            "price"    : 535,
+            "datetime" : "2014/09/09",
+            "comment"  : ""
+        }, {
+            "name"     : "面紙",
+            "price"    : 5670,
+            "datetime" : "2014/09/26",
+            "comment"  : "6000 包，選舉期間漲價了"
+        }, {
+            "name"     : "DM",
+            "price"    : 2415,
+            "datetime" : "2014/10/07",
+            "comment"  : "第一版加印 2000"
+        }, {
+            "name"     : "DM",
+            "price"    : 3990,
+            "datetime" : "2014/10/09",
+            "comment"  : "第二版 4000 份"
+        }, {
+            "name"     : "外牆海報",
+            "price"    : 1500,
+            "datetime" : "2014/10/15",
+            "comment"  : ""
+        }, {
+            "name"     : "總部成立賀禮",
+            "price"    : 3000,
+            "datetime" : "2014/10/17",
+            "comment"  : "慶誌盆栽*3，恭賀其他候選人"
+        }, {
+            "name"     : "競選肩帶",
+            "price"    : 2400,
+            "datetime" : "2014/10/23",
+            "comment"  : "兩份"
+        }, {
+            "name"     : "總部成立賀禮",
+            "price"    : 1000,
+            "datetime" : "2014/10/31",
+            "comment"  :  "慶誌盆栽*1，恭賀其他候選人"
         }
     ]
 }
