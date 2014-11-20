@@ -1,0 +1,374 @@
+doctype html
+html
+  head
+    title 頭份青年強
+    meta(charset='utf-8')
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    <meta content="頭份青年強" property="og:site_name">
+    <meta content="頭份鎮第三選區鎮民代表政見" property="og:title">
+    <meta content="http://toufen.net" property="og:url">
+    <meta content="website" property="og:type">
+    <meta content="http://toufen.net/imgs/logo_og.png" property="og:image">
+    <meta content="頭份鎮第三選區鎮民代表，你知道有哪些候選人嗎？" property="og:description">
+    // Mobile Specific Metas
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+
+    include common/ie_js
+    include common/css
+
+    // Favicons
+    link(rel='shortcut icon', href='favicon.ico')
+
+  body#vote-guide.container-fluid(ng-app="toufen.net" data-spy='scroll', data-target='#nav-wrap')
+    include partials/nav
+
+    div.row.intro
+      div.col-sm-1.col-md-2.block
+      div.col-sm-10.col-md-8.block
+        div.row.text-center
+          span.padding-h
+            a.btn.btn-default(href="/vote_3-1.html") 第一選區
+          span.padding-h
+            a.btn.btn-default(href="/vote_3-2.html") 第二選區
+          span.padding-h
+            a.btn.btn-info 第三選區
+          span.padding-h
+            a.btn.btn-default(href="/vote_3-4.html") 第四選區
+          span.padding-h
+            a.btn.btn-default(href="/vote_3-5.html") 第五選區
+        div.row.text-center
+          h1 2014 苗栗頭份鎮民代表第三選區
+          h3.text-info  山下  合興  後庄  成功  文化  建國  蟠桃
+          div.col-md-offset-3.col-md-6.text-left
+            p 因為鎮民代表候選人數量較多，煥強與其他候選人之間又有競爭關係，實在無法親自邀約面談。(若說「您好我是跟您同選區的候選人，想訪問你的參選理念，整理給網民看看」應該會被罵吧)
+            p 我們擷取了選舉公報上的內容供您參考。怎麼煥強的有點不一樣？這是當然的啊！(笑)
+        div.row.intro-list
+          div.col-xs-4.col-md-3.intro-item
+            div
+              img.center-block(src="/imgs/candidate-3-3-1.png")
+            div.text-center.intro-name
+              span.number 1
+              span 曾玉琳
+          div.col-xs-4.col-md-3.intro-item
+            div
+              img.center-block(src="/imgs/candidate-3-3-2.png")
+            div.text-center.intro-name
+              span.number 2
+              span.special(style="font-size:1.3em") 黎煥強
+          div.col-xs-4.col-md-3.intro-item
+            div
+              img.center-block(src="/imgs/candidate-3-3-3.png")
+            div.text-center.intro-name
+              span.number 3
+              span 林群峰
+          div.clearfix.visible-sm.visible-xs
+          div.col-xs-4.col-md-3.intro-item
+            div
+              img.center-block(src="/imgs/candidate-3-3-4.png")
+            div.text-center.intro-name
+              span.number 4
+              span 黃育烈
+          div.clearfix.hidden-sm.hidden-xs
+          div.col-xs-4.col-md-3.intro-item
+            div
+              img.center-block(src="/imgs/candidate-3-3-5.png")
+            div.text-center.intro-name
+              span.number 5
+              span 黃壽榮
+          div.col-xs-4.col-md-3.intro-item
+            div
+              img.center-block(src="/imgs/candidate-3-3-6.png")
+            div.text-center.intro-name
+              span.number 6
+              span 陳學琳
+          div.clearfix.visible-sm.visible-xs
+          div.col-xs-4.col-md-3.intro-item
+            div
+              img.center-block(src="/imgs/candidate-3-3-7.png")
+            div.text-center.intro-name
+              span.number 7
+              span 白珠珍
+          div.col-xs-4.col-md-3.intro-item
+            div
+              img.center-block(src="/imgs/candidate-3-3-8.png")
+            div.text-center.intro-name
+              span.number 8
+              span 陳詩弦
+      div.col-sm-1.col-md-2.block
+
+    div.row.people
+      div.col-sm-1.col-md-2.block
+      div.col-sm-10.col-md-8.block
+        div.img
+          img.intro(src="/imgs/candidate-3-3-1.png")
+        div.content
+          h1
+            span.number 1
+            | 曾玉琳
+          ul
+            li 無黨籍
+            li 業華製衣場技術員
+            li 巧得企業社  會計
+          div.question
+            div.title
+              span.title-1
+                | 政見
+              span.title-2
+                | 取自中選會公報
+            div.hr
+            div.answer
+              ul
+                li 主動積極用心服務
+                li 為民喉舌監督鎮務
+                li 關懷弱勢爭取福利
+                li 爭取經費建設地方
+          div.comment
+            | 圖片取自中選會選舉公報。
+
+    div.row.people
+      div.col-sm-1.col-md-2.block
+      div.col-sm-10.col-md-8.block
+        div.img
+          img.intro(src="/imgs/candidate-3-3-2-large.jpg")
+        div.content
+          h1
+            span.number 2
+            | 黎煥強
+          ul
+            li 無黨籍
+            li 超豐電子設備工程師
+            li 瑞鼎科技電路佈局工程師
+            li.special 兩個孩子的爸
+          div.question
+            div.title
+              span.title-1
+                | 政見
+              span.title-2
+                | 請看<a href="/">頭份青年強</a>網站
+            div.hr
+            div.answer
+              | 身為鎮民，我想做到的有
+              ol
+                li 提昇監視器妥善率，強化治安效能，有監視器就要有畫面
+                li 利用網路整合頭份各項事務，輕鬆獲得生活資訊，隨時反應問題
+              | 身為父親，我想做到的有
+              ol
+                li 提升公共托育比例，減輕家長負擔
+                li 活化閒置空間，增加親子育樂及教育設施
+                li 擴展學童課後輔導，豐富生活體驗
+              | 身為投身政治的公民，我想實踐的有
+              ol
+                li 定期向鎮民回報工作進度，供鎮民隨時檢驗
+                li 深化公民參政，引入各專業人士共同監督鎮政
+          p
+            | 煥強的經歷與眾多鄉親朋友類似，因此很理解大家的需求與期盼。
+            | 工程師出身的煥強，把思考問題，勇於尋求解答的態度，帶入頭份政治，
+            | 為自己熱愛的家鄉盡一份心力
+          p
+            | 您現在看的網站，就是由煥強的團隊建構。我們希望在能力所及範圍內，整理出大家可能會關心的內容。
+            | 除了政黨、臉熟、名字熟之外，還能多一些判斷投票的素材。
+          p
+            | 同時也希望您能注意到我們，看看我們的網站。希望我們能成為值得您推薦給其他頭份鎮民的團隊
+          ul
+            li 網站：<a href="http://toufen.net/">頭份青年強</a>
+            li FB：<a href="https://www.facebook.com/toufen.net">頭份青年強粉絲團</a>
+
+    div.row.people
+      div.col-sm-1.col-md-2.block
+      div.col-sm-10.col-md-8.block
+        div.img
+          img.intro(src="/imgs/candidate-3-3-3.png")
+        div.content
+          h1
+            span.number 3
+            | 林群峰
+          ul
+            li 無黨籍
+            li 2013 頭份夏威夷扶輪社法治委員
+            li 2013 歲寒送暖主辦
+            li 2012 全台電音三太子祈福活動 協辦
+          div.question
+            div.title
+              span.title-1
+                | 政見
+              span.title-2
+                | 取自中選會公報
+            div.hr
+            div.answer
+              div 改變才有未來
+              ul
+                li 監督鎮務，為民把關
+                li 關懷弱勢，為民喉舌
+                li 爭取監視系統，維護社區安全
+                li 不分藍綠，為民發聲
+          div.comment
+            | 圖片取自中選會選舉公報。
+
+    div.row.people
+      div.col-sm-1.col-md-2.block
+      div.col-sm-10.col-md-8.block
+        div.img
+          img.intro(src="/imgs/candidate-3-3-4.png")
+        div.content
+          h1
+            span.number 4
+            | 黃育烈
+          ul
+            li 無黨籍
+            li 第 18, 19 屆鎮民代表
+            li 黃育烈代書地政士事務所
+            li 信義國小5, 6, 7, 8 屆家長會長
+          div.question
+            div.title
+              span.title-1
+                | 政見
+              span.title-2
+                | 取自中選會公報
+            div.hr
+            div.answer
+              ul
+                li 督促鎮公所寬列預算，全面加強照顧弱勢家庭和急難救助業務
+                li 推動鎮內市區亮化工程，美化市容
+                li 要求加強治安，落實各社區巡守隊工作，打擊非法，使鎮民安居樂業
+                li 為民先鋒、為民喉舌、督促鎮政、落實基層聲音
+          div.comment
+            | 圖片取自中選會選舉公報。
+
+    div.row.people
+      div.col-sm-1.col-md-2.block
+      div.col-sm-10.col-md-8.block
+        div.img
+          img.intro(src="/imgs/candidate-3-3-5.png")
+        div.content
+          h1
+            span.number 5
+            | 黃壽榮
+          ul
+            li 無黨籍
+            li 第 19 屆鎮民代表副主席
+            li 第 18 屆鎮民代表
+            li 信義獅子會會長
+          div.question
+            div.title
+              span.title-1
+                | 政見
+              span.title-2
+                | 取自中選會公報
+            div.hr
+            div.answer
+              ul
+                li 全心為民服務
+                li 為民爭取福利
+                li 爭取地方建設
+          div.comment
+            | 圖片取自中選會選舉公報。
+
+    div.row.people
+      div.col-sm-1.col-md-2.block
+      div.col-sm-10.col-md-8.block
+        div.img
+          img.intro(src="/imgs/candidate-3-3-6.png")
+        div.content
+          h1
+            span.number 6
+            | 陳學琳
+          ul
+            li 中國國民黨
+            li 現任鎮民代表
+            li 國際獅子會會長
+            li 建國國中、國小家長會長、副會長
+            li 自然風、快樂腳休閒養生館董事長
+          div.question
+            div.title
+              span.title-1
+                | 政見
+              span.title-2
+                | 取自中選會公報
+            div.hr
+            div.answer
+              ul
+              li 嚴守民代分際、專職監督鎮政
+              li 誠懇為民服務、提昇民眾福祉
+              li 推動家戶聯防、維護社區治安
+              li 關懷老人福利、落實幼教品質
+              li 爭取基層建設、促進地方發展
+              li 加強社區美化、改善生活品質
+          div.comment
+            | 圖片取自中選會選舉公報。
+
+    div.row.people
+      div.col-sm-1.col-md-2.block
+      div.col-sm-10.col-md-8.block
+        div.img
+          img.intro(src="/imgs/candidate-3-3-7.png")
+        div.content
+          h1
+            span.number 7
+            | 白珠珍
+          ul
+            li 無黨籍
+            li 第 19 屆鎮民代表
+            li 頭份鎮衛生所護理長
+            li 三灣鄉衛生所助產士
+          div.question
+            div.title
+              span.title-1
+                | 政見
+              span.title-2
+                | 取自中選會公報
+            div.hr
+            div.answer
+              ul
+                li 推動老人安養
+                  ul
+                    li 推動公立老人安養，使人民老而有養，降低年輕人經濟負擔
+                    li 推動公立日間托老
+                    li 推動健康園地
+                li 推動社區關懷
+                  ul
+                    li 協助老弱婦孺
+                    li 協助弱勢團體
+                    li 加強親子教育
+                li 推動人口密集頭份鎮忠孝里長樂街 8 米計畫道路開闢
+                li 推動中央路商業城具體化，市容美化
+                li 推動幼稚園教育進入小學一貫教學
+          div.comment
+            | 圖片取自中選會選舉公報。
+
+    div.row.people
+      div.col-sm-1.col-md-2.block
+      div.col-sm-10.col-md-8.block
+        div.img
+          img.intro(src="/imgs/candidate-3-3-8.png")
+        div.content
+          h1
+            span.number 8
+            | 陳詩弦
+          ul
+            li 民主進步黨
+            li 蔡煌瑯國會辦公室助理
+            li 民進黨苗栗縣黨部執行委員
+            li 社團法人台灣青年智庫常務理事
+          div.question
+            div.title
+              span.title-1
+                | 政見
+              span.title-2
+                | 取自中選會公報
+            div.hr
+            div.answer
+              ul
+                li 活化產業空間
+                li 建構在地安全
+                li 提供法律諮詢
+                li 強化公共托幼
+                li 提升休閒設施
+          div.comment
+            | 圖片取自中選會選舉公報。
+
+      div.col-sm-1.col-md-2.block
+
+    include partials/footer
+    include common/vendor_js
+    include common/app_js
+

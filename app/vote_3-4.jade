@@ -1,0 +1,123 @@
+doctype html
+html
+  head
+    title 頭份青年強
+    meta(charset='utf-8')
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    <meta content="頭份青年強" property="og:site_name">
+    <meta content="頭份鎮第四選區鎮民代表政見" property="og:title">
+    <meta content="http://toufen.net" property="og:url">
+    <meta content="website" property="og:type">
+    <meta content="http://toufen.net/imgs/logo_og.png" property="og:image">
+    <meta content="頭份鎮第四選區鎮民代表，你知道有哪些候選人嗎？" property="og:description">
+    // Mobile Specific Metas
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+
+    include common/ie_js
+    include common/css
+
+    // Favicons
+    link(rel='shortcut icon', href='favicon.ico')
+
+  body#vote-guide.container-fluid(ng-app="toufen.net" data-spy='scroll', data-target='#nav-wrap')
+    include partials/nav
+
+    div.row.intro
+      div.col-sm-1.col-md-2.block
+      div.col-sm-10.col-md-8.block
+        div.row.text-center
+          span.padding-h
+            a.btn.btn-default(href="/vote_3-1.html") 第一選區
+          span.padding-h
+            a.btn.btn-default(href="/vote_3-2.html") 第二選區
+          span.padding-h
+            a.btn.btn-default(href="/vote_3-3.html") 第三選區
+          span.padding-h
+            a.btn.btn-info 第四選區
+          span.padding-h
+            a.btn.btn-default(href="/vote_3-5.html") 第五選區
+        div.row.text-center
+          h1 2014 苗栗頭份鎮民代表第四選區
+          h3.text-info  東庄  民族  民權  田寮
+          div.col-md-offset-3.col-md-6.text-left
+          p
+            | 我們擷取了選舉公報上的內容供您參考。也歡迎您介紹
+            a(href="/vote_3-3.html") 第三選區
+            | 的煥強，給朋友認識一下
+        div.row.intro-list
+          div.col-xs-4.col-md-3.intro-item
+            div
+              img.center-block(src="/imgs/candidate-3-4-1.png")
+            div.text-center.intro-name
+              span.number 1
+              span 曾畯憲
+          div.col-xs-4.col-md-3.intro-item
+            div
+              img.center-block(src="/imgs/candidate-3-4-2.png")
+            div.text-center.intro-name
+              span.number 2
+              span 劉燕祥
+      div.col-sm-1.col-md-2.block
+
+    div.row.people
+      div.col-sm-1.col-md-2.block
+      div.col-sm-10.col-md-8.block
+        div.img
+          img.intro(src="/imgs/candidate-3-4-1.png")
+        div.content
+          h1
+            span.number 1
+            | 曾畯憲
+          ul
+            li 中國國民黨
+            li 第 15 屆鎮民代表副主席
+            li 第 17 屆鎮民代表
+          div.question
+            div.title
+              span.title-1
+                | 政見
+              span.title-2
+                | 取自中選會公報
+            div.hr
+            div.answer
+              ul
+                li 全力促成活化活動中心成為托老托幼中心
+                li 全力促成工業區與鄰里連線提升鄉親生活住家安全
+                li 全力爭取地方建設經費、以便活化地方建設繁榮
+          div.comment
+            | 圖片取自中選會選舉公報。
+
+    div.row.people
+      div.col-sm-1.col-md-2.block
+      div.col-sm-10.col-md-8.block
+        div.img
+          img.intro(src="/imgs/candidate-3-4-2.png")
+        div.content
+          h1
+            span.number 2
+            | 劉燕祥
+          ul
+            li 無黨籍
+            li 第 17, 18, 19 屆鎮民代表
+            li 頭份鎮田寮里第 15, 16 屆里長
+            li 頭份國中第 37, 38 屆家長會長
+          div.question
+            div.title
+              span.title-1
+                | 政見
+              span.title-2
+                | 取自中選會公報
+            div.hr
+            div.answer
+              ul
+                li 踏實、穩健、從基層出發開創未來
+                li 全方位為鄉親服務，爭取建設
+          div.comment
+            | 圖片取自中選會選舉公報。
+
+      div.col-sm-1.col-md-2.block
+
+    include partials/footer
+    include common/vendor_js
+    include common/app_js
+
