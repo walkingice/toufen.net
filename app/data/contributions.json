@@ -111,6 +111,111 @@
             "price"    : -20,
             "datetime" : "2014/10/27",
             "comment"  : ""
+        }, {
+            "name"     : "古〇波、古〇嘉",
+            "price"    : 20000,
+            "datetime" : "2014/11/11",
+            "comment"  : "個人捐贈收入"
+        }, {
+            "name"     : "現金存款手續費",
+            "price"    : -20,
+            "datetime" : "2014/11/11",
+            "comment"  : ""
+        }, {
+            "name"     : "黃〇湧",
+            "price"    : 10000,
+            "datetime" : "2014/11/11",
+            "comment"  : "個人捐贈收入"
+        }, {
+            "name"     : "現金存款手續費",
+            "price"    : -20,
+            "datetime" : "2014/11/11",
+            "comment"  : ""
+        }, {
+            "name"     : "徐〇哲",
+            "price"    : 5000,
+            "datetime" : "2014/11/15",
+            "comment"  : "個人捐贈收入"
+        }, {
+            "name"     : "蘇〇東",
+            "price"    : 1000,
+            "datetime" : "2014/11/15",
+            "comment"  : "個人捐贈收入"
+        }, {
+            "name"     : "陳〇文",
+            "price"    : 1000,
+            "datetime" : "2014/11/15",
+            "comment"  : "個人捐贈收入"
+        }, {
+            "name"     : "陳〇和",
+            "price"    : 1000,
+            "datetime" : "2014/11/15",
+            "comment"  : "個人捐贈收入"
+        }, {
+            "name"     : "羅〇騰",
+            "price"    : 1000,
+            "datetime" : "2014/11/15",
+            "comment"  : "個人捐贈收入"
+        }, {
+            "name"     : "高〇浩",
+            "price"    : 1000,
+            "datetime" : "2014/11/15",
+            "comment"  : "個人捐贈收入"
+        }, {
+            "name"     : "羅〇年",
+            "price"    : 1200,
+            "datetime" : "2014/11/15",
+            "comment"  : "個人捐贈收入"
+        }, {
+            "name"     : "李〇明",
+            "price"    : 1200,
+            "datetime" : "2014/11/15",
+            "comment"  : "個人捐贈收入"
+        }, {
+            "name"     : "陳〇添",
+            "price"    : 1200,
+            "datetime" : "2014/11/15",
+            "comment"  : "個人捐贈收入"
+        }, {
+            "name"     : "卓〇財",
+            "price"    : 1200,
+            "datetime" : "2014/11/15",
+            "comment"  : "個人捐贈收入"
+        }, {
+            "name"     : "徐〇平",
+            "price"    : 1200,
+            "datetime" : "2014/11/15",
+            "comment"  : "個人捐贈收入"
+        }, {
+            "name"     : "黎〇銘",
+            "price"    : 2000,
+            "datetime" : "2014/11/15",
+            "comment"  : "個人捐贈收入"
+        }, {
+            "name"     : "陳〇成",
+            "price"    : 2000,
+            "datetime" : "2014/11/15",
+            "comment"  : "個人捐贈收入"
+        }, {
+            "name"     : "黃〇熊",
+            "price"    : 2000,
+            "datetime" : "2014/11/15",
+            "comment"  : "個人捐贈收入"
+        }, {
+            "name"     : "黎〇田",
+            "price"    : 3000,
+            "datetime" : "2014/11/15",
+            "comment"  : "個人捐贈收入"
+        }, {
+            "name"     : "李〇賢",
+            "price"    : 3000,
+            "datetime" : "2014/11/15",
+            "comment"  : "個人捐贈收入"
+        }, {
+            "name"     : "吳〇瑛",
+            "price"    : 2000,
+            "datetime" : "2014/11/15",
+            "comment"  : "個人捐贈收入"
         }
     ]
 }
