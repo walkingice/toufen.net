@@ -131,6 +131,161 @@
             "price"    : 1000,
             "datetime" : "2014/10/31",
             "comment"  :  "慶誌盆栽*1，恭賀其他候選人"
+        }, {
+            "name"     : "文宣",
+            "price"    : 3780,
+            "datetime" : "2014/11/5",
+            "comment"  :  "請柬*1000，小張DM*4000"
+        }, {
+            "name"     : "背心號碼印工",
+            "price"    : 450,
+            "datetime" : "2014/11/10",
+            "comment"  :  ""
+        }, {
+            "name"     : "名片",
+            "price"    : 945,
+            "datetime" : "2014/11/10",
+            "comment"  :  "300張"
+        }, {
+            "name"     : "金香",
+            "price"    : 1170,
+            "datetime" : "2014/11/10",
+            "comment"  :  ""
+        }, {
+            "name"     : "餐具",
+            "price"    : 1000,
+            "datetime" : "2014/11/10",
+            "comment"  :  ""
+        }, {
+            "name"     : "印章",
+            "price"    : 80,
+            "datetime" : "2014/11/11",
+            "comment"  :  ""
+        }, {
+            "name"     : "LED",
+            "price"    : 950,
+            "datetime" : "2014/11/13",
+            "comment"  :  "外牆 LED 照明"
+        }, {
+            "name"     : "文具",
+            "price"    : 175,
+            "datetime" : "2014/11/14",
+            "comment"  :  "筆、簽到簿"
+        }, {
+            "name"     : "慶誌花籃",
+            "price"    : 600,
+            "datetime" : "2014/11/14",
+            "comment"  :  ""
+        }, {
+            "name"     : "慶誌盆栽",
+            "price"    : 1000,
+            "datetime" : "2014/11/14",
+            "comment"  :  ""
+        }, {
+            "name"     : "交通錐",
+            "price"    : 400,
+            "datetime" : "2014/11/14",
+            "comment"  :  ""
+        }, {
+            "name"     : "水果",
+            "price"    : 8500,
+            "datetime" : "2014/11/14",
+            "comment"  :  "成立大會使用"
+        }, {
+            "name"     : "租借費用",
+            "price"    : 5000,
+            "datetime" : "2014/11/15",
+            "comment"  :  "成立大會租棉花糖機"
+        }, {
+            "name"     : "佈置",
+            "price"    : 24700,
+            "datetime" : "2014/11/15",
+            "comment"  :  "總部成立會場布置(搭棚桌椅喇叭)"
+        }, {
+            "name"     : "糖果瓜子",
+            "price"    : 800,
+            "datetime" : "2014/11/15",
+            "comment"  :  "成立大會使用"
+        }, {
+            "name"     : "祭祀用水果",
+            "price"    : 3700,
+            "datetime" : "2014/11/15",
+            "comment"  :  "成立大會使用"
+        }, {
+            "name"     : "米粉粽子各450人份",
+            "price"    : 13980,
+            "datetime" : "2014/11/15",
+            "comment"  :  ""
+        }, {
+            "name"     : "甜湯圓250人份",
+            "price"    : 8000,
+            "datetime" : "2014/11/15",
+            "comment"  :  ""
+        }, {
+            "name"     : "紅包子",
+            "price"    : 430,
+            "datetime" : "2014/11/15",
+            "comment"  :  ""
+        }, {
+            "name"     : "工作人員點心",
+            "price"    : 1500,
+            "datetime" : "2014/11/16",
+            "comment"  :  ""
+        }, {
+            "name"     : "2號氦氣氣球34吋",
+            "price"    : 800,
+            "datetime" : "2014/11/18",
+            "comment"  :  "2 個"
+        }, {
+            "name"     : "競選道具材料",
+            "price"    : 762,
+            "datetime" : "2014/11/20",
+            "comment"  :  ""
+        }, {
+            "name"     : "2號氣球14吋",
+            "price"    : 3200,
+            "datetime" : "2014/11/20",
+            "comment"  :  "30 個"
+        }, {
+            "name"     : "飲料",
+            "price"    : 300,
+            "datetime" : "2014/11/20",
+            "comment"  :  "10 份"
+        }, {
+            "name"     : "高空3米氣球",
+            "price"    : 26000,
+            "datetime" : "2014/11/21",
+            "comment"  :  ""
+        }, {
+            "name"     : "噴漆",
+            "price"    : 468,
+            "datetime" : "2014/11/21",
+            "comment"  :  ""
+        }, {
+            "name"     : "工作人員點心",
+            "price"    : 1500,
+            "datetime" : "2014/11/22",
+            "comment"  :  ""
+        }, {
+            "name"     : "加印文宣",
+            "price"    : 2200,
+            "datetime" : "2014/11/25",
+            "comment"  :  "小張DM * 1500，第2版文宣 * 500"
+        }, {
+            "name"     : "喪家果盆花圈",
+            "price"    : 900,
+            "datetime" : "2014/11/27",
+            "comment"  :  ""
+        }, {
+            "name"     : "工作人員點心",
+            "price"    : 2600,
+            "datetime" : "2014/11/27",
+            "comment"  :  ""
+        }, {
+            "name"     : "競選道具材料",
+            "price"    : 240,
+            "datetime" : "2014/11/27",
+            "comment"  :  ""
         }
     ]
 }
