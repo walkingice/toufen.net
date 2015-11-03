@@ -1,5 +1,10 @@
-app/bower_components
-node_modules
-_public
-npm-debug.log
-_tmp/*
+.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
+_config.yml
+themes/*
+
