@@ -14,7 +14,7 @@ To install needed package by commands
 
 To run in local
 
-    $ node_modules/.bin/hexo s
+    $ npm run local
 
 # License
 
