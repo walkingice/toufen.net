@@ -2054,6 +2054,125 @@ ol.toc {
 .ins-section .ins-search-item.active .ins-search-preview {
   color: #fff;
 }
+.meeting-container {
+  width: 90%;
+  margin: auto;
+}
+.meeting-row {
+  width: 100%;
+}
+.meeting-cell {
+  margin-bottom: 20px;
+  vertical-align: top;
+  display: inline-block;
+}
+@media screen and (max-width: 559px) {
+  .meeting-cell {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 560px) and (max-width: 799px) {
+  .meeting-cell {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+  .meeting-cell {
+    width: 32%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .meeting-cell {
+    width: 350px;
+  }
+}
+.meeting-main-content {
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+@media screen and (max-width: 559px) {
+  .meeting-main-content {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 560px) and (max-width: 799px) {
+  .meeting-main-content {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+  .meeting-main-content {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .meeting-main-content {
+    width: 50%;
+  }
+}
+.meeting-main-content h1 {
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 5rem;
+}
+.meeting-main-content p {
+  margin-bottom: 1rem;
+}
+.meeting-main-content ol,
+.meeting-main-content ul {
+  list-style: disc;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.meeting-main-content ol li,
+.meeting-main-content ul li {
+  line-height: 1.5rem;
+}
+.meeting-type-regular {
+  height: 5px;
+  background-color: #42b4e6;
+}
+.meeting-type-interim {
+  height: 5px;
+  background-color: #ffeb3b;
+}
+.meeting-type-none {
+  height: 5px;
+  background-color: #ccc;
+}
+.meeting-cell-container {
+  color: #565a5f;
+  -webkit-box-shadow: 1px 2px 5px #888;
+  box-shadow: 1px 2px 5px #888;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #fff;
+}
+.meeting-cell-container:hover {
+  background-color: #eee;
+  color: #565a5f;
+}
+.meeting-cell-link {
+  color: #565a5f;
+}
+.meeting-cell-title {
+  font-size: 1.3rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.meeting-cell-content {
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  padding: 10px;
+  line-height: 1.6em;
+}
+.meeting-cell-date {
+  margin-top: 10px;
+}
 .highlight {
   margin: 0px;
   display: block;

@@ -2,16 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://toufen.net/meetings/index.html</loc>
+    
+    <lastmod>2018-02-27T09:06:58.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://toufen.net/2016/04/14-post.html</loc>
+    
+    <lastmod>2018-02-27T06:38:04.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://toufen.net/2016/01/21-p.html</loc>
+    
+    <lastmod>2018-02-27T06:38:04.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://toufen.net/2016/05/16-post.html</loc>
+    
+    <lastmod>2018-02-27T06:38:04.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://toufen.net/2016/07/11-post.html</loc>
     
-    <lastmod>2018-02-26T17:08:57.000Z</lastmod>
+    <lastmod>2018-02-27T06:38:04.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://toufen.net/2016/09/12-post.html</loc>
     
-    <lastmod>2018-02-26T17:08:57.000Z</lastmod>
+    <lastmod>2018-02-27T06:38:04.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://toufen.net/2016/11/01-post.html</loc>
+    
+    <lastmod>2018-02-27T06:38:04.000Z</lastmod>
     
   </url>
   
@@ -23,44 +58,9 @@
   </url>
   
   <url>
-    <loc>http://toufen.net/2016/11/01-post.html</loc>
-    
-    <lastmod>2018-02-26T17:08:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://toufen.net/2016/01/21-p.html</loc>
-    
-    <lastmod>2018-02-26T16:44:29.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://toufen.net/2016/04/14-post.html</loc>
-    
-    <lastmod>2018-02-26T16:44:29.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://toufen.net/2016/05/16-post.html</loc>
-    
-    <lastmod>2018-02-26T16:44:29.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://toufen.net/2016/10/23-japan.html</loc>
     
     <lastmod>2017-01-31T03:45:21.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://toufen.net/2016/04/27-post.html</loc>
-    
-    <lastmod>2016-12-02T15:05:56.000Z</lastmod>
     
   </url>
   
@@ -121,7 +121,7 @@
   </url>
   
   <url>
-    <loc>http://toufen.net/2015/11/03-sitting.html</loc>
+    <loc>http://toufen.net/2016/04/27-post.html</loc>
     
     <lastmod>2016-12-02T15:05:56.000Z</lastmod>
     
@@ -163,13 +163,6 @@
   </url>
   
   <url>
-    <loc>http://toufen.net/2016/06/10-speech.html</loc>
-    
-    <lastmod>2016-12-02T15:05:56.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://toufen.net/2016/05/22-p.html</loc>
     
     <lastmod>2016-12-02T15:05:56.000Z</lastmod>
@@ -177,7 +170,21 @@
   </url>
   
   <url>
+    <loc>http://toufen.net/2015/11/03-sitting.html</loc>
+    
+    <lastmod>2016-12-02T15:05:56.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://toufen.net/2015/11/07-pre.html</loc>
+    
+    <lastmod>2016-12-02T15:05:56.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://toufen.net/2016/06/10-speech.html</loc>
     
     <lastmod>2016-12-02T15:05:56.000Z</lastmod>
     
@@ -212,13 +219,6 @@
   </url>
   
   <url>
-    <loc>http://toufen.net/2016/01/15-2016-01-15-election.html</loc>
-    
-    <lastmod>2016-12-02T15:05:56.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://toufen.net/about/contributions.json</loc>
     
     <lastmod>2016-12-02T15:05:56.000Z</lastmod>
@@ -234,6 +234,13 @@
   
   <url>
     <loc>http://toufen.net/about/index.html</loc>
+    
+    <lastmod>2016-12-02T15:05:56.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://toufen.net/2016/01/15-2016-01-15-election.html</loc>
     
     <lastmod>2016-12-02T15:05:56.000Z</lastmod>
     
