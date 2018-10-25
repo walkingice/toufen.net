@@ -1,6 +1,6 @@
 title: 第一屆市民代表會，黎煥強參與會議紀錄
 date: 2015-10-01 00:33:14
-query_tag: "第一屆市民代表會紀錄"
+query_tag: "質詢"
 contentonly: true
 description: "這裡是煥強在代表會每次開會紀錄的列表，有影像檔以及逐字稿。讓市民隨時檢驗煥強在代表會裡的表現"
 layout: "sessions"
