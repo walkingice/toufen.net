@@ -110,11 +110,6 @@ button::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
-html,
-body,
-#container {
-  height: 100%;
-}
 body {
   color: #565a5f;
   background: #f5f8f9;
@@ -2256,4 +2251,42 @@ ol.toc {
 .highlight .code .type,
 .highlight .code .selector-id {
   font-weight: bold;
+}
+#index-body {
+  background-color: #fff;
+}
+#finance-body .hightlight {
+  background-color: #eee;
+  padding: 10px;
+}
+.promotion-container {
+  width: 90%;
+  margin: auto;
+}
+.pomotion-row {
+  width: 100%;
+}
+.promotion-main-content {
+  margin: auto;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 559px) {
+  .promotion-main-content {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 560px) and (max-width: 799px) {
+  .promotion-main-content {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+  .promotion-main-content {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .promotion-main-content {
+    width: 50%;
+  }
 }
