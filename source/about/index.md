@@ -1,6 +1,7 @@
 title: "您好，我是黎煥強"
 contentonly: true
 banner: /about/banner.jpg
+description: "苗栗縣議員參選人 6 號黎煥強！認真誠懇，踏實前進，值得您支持的民意代表"
 layout: "about"
 ---
 

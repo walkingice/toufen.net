@@ -1,7 +1,7 @@
 title: 苗栗縣議員參選人黎煥強，所有選舉經費
 date: 2018-11-01 00:33:14
 contentonly: true
-description: "苗栗縣議員參選人 6 號黎煥強，選舉經費所有項目"
+description: "苗栗縣議員參選人 6 號黎煥強，所有小額捐款紀錄你都看得見！"
 layout: "finance"
 ---
 
