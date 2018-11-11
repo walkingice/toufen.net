@@ -22,19 +22,19 @@
       "name": "扇子",
       "price": 25200,
       "datetime": "2018/05/08",
-      "comment": "5000 份"
+      "comment": "5000份"
     },
     {
       "name": "廣告面紙",
       "price": 34965,
       "datetime": "2018/05/11",
-      "comment": "30000 份"
+      "comment": "30000份"
     },
     {
       "name": "廣告面紙",
       "price": 90930,
       "datetime": "2018/05/11",
-      "comment": "20000 份"
+      "comment": "20000份"
     },
     {
       "name": "廣告宣傳品",
@@ -70,7 +70,7 @@
       "name": "扇子",
       "price": 84000,
       "datetime": "2018/06/04",
-      "comment": "20000 份"
+      "comment": "20000份"
     },
     {
       "name": "布條",
@@ -88,7 +88,7 @@
       "name": "拜訪卡",
       "price": 407,
       "datetime": "2018/06/20",
-      "comment": "20 盒"
+      "comment": "20盒"
     },
     {
       "name": "沙士",
@@ -100,13 +100,13 @@
       "name": "扇子",
       "price": 25200,
       "datetime": "2018/07/17",
-      "comment": "5000 份"
+      "comment": "5000份"
     },
     {
       "name": "布旗",
       "price": 1000,
       "datetime": "2018/08/21",
-      "comment": "2 份"
+      "comment": "2份"
     },
     {
       "name": "布條+伸縮桿",
@@ -232,7 +232,7 @@
       "name": "肩帶",
       "price": 3800,
       "datetime": "2018/10/10",
-      "comment": "2 條"
+      "comment": "2條"
     },
     {
       "name": "主持費用",
@@ -259,10 +259,10 @@
       "comment": ""
     },
     {
-      "name": "B3 海報",
+      "name": "B3海報",
       "price": 1134,
       "datetime": "2018/10/12",
-      "comment": "100 張"
+      "comment": "100張"
     },
     {
       "name": "海報",
@@ -274,13 +274,13 @@
       "name": "摺紙DM",
       "price": 3449,
       "datetime": "2018/10/18",
-      "comment": "8000 份"
+      "comment": "8000份"
     },
     {
       "name": "印刷海報",
       "price": 9000,
       "datetime": "2018/10/19",
-      "comment": "1 面"
+      "comment": "1面"
     },
     {
       "name": "咖啡+紙杯",
@@ -328,7 +328,7 @@
       "name": "廣告面紙",
       "price": 37800,
       "datetime": "2018/11/01",
-      "comment": "30000 份"
+      "comment": "30000份"
     },
     {
       "name": "麥克筆",
@@ -346,13 +346,13 @@
       "name": "摺紙DM",
       "price": 3449,
       "datetime": "2018/11/09",
-      "comment": "8000 份"
+      "comment": "8000份"
     },
     {
       "name": "教學擴音器",
       "price": 2970,
       "datetime": "2018/11/10",
-      "comment": "3 組"
+      "comment": "3組"
     },
     {
       "name": "肌樂",
