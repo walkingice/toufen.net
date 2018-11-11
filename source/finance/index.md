@@ -4,6 +4,12 @@ contentonly: true
 description: "苗栗縣議員參選人 6 號黎煥強，所有小額捐款紀錄你都看得見！"
 layout: "finance"
 ---
+<style>
+.article-entry td {
+    padding: 10px 5px;
+}
+</style>
+
 
 我是苗栗縣議員參選人黎煥強，我支持政治人物參選的時候，應該要公佈自己的選舉經費來源，以及使用明細。
 
