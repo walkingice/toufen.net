@@ -24,7 +24,7 @@ layout: "finance"
 
 * [contributions_2018.json](./contributions_2018.json)
     <!-- $ cat contributions_2018.json | jq ".entries[].price" | awk '{ sum += $1; } END { print sum; }' "$@" -->
-    * 收入合計 505,200
+    * 收入合計 530,200
 
 * [cost_2018.json](./cost_2018.json)
     <!-- $ cat cost_2018.json | jq '.entries[].price' |awk '{ sum += $1; } END {print sum;}' "$@" -->
