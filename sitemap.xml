@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://miaoli.run/finance/index.html</loc>
+    
+    <lastmod>2018-11-11T03:51:38.320Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://miaoli.run/finance/cost_2018.json</loc>
+    
+    <lastmod>2018-11-11T03:47:09.445Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://miaoli.run/index.html</loc>
     
     <lastmod>2018-11-06T14:09:35.705Z</lastmod>
@@ -19,13 +33,6 @@
     <loc>http://miaoli.run/sessions/index.html</loc>
     
     <lastmod>2018-11-06T13:42:11.146Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://miaoli.run/finance/index.html</loc>
-    
-    <lastmod>2018-11-06T13:39:39.889Z</lastmod>
     
   </url>
   
