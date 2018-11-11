@@ -341,6 +341,30 @@
       "price": 3449,
       "datetime": "2018/11/09",
       "comment": "8000 份"
+    },
+    {
+      "name": "小蜜蜂擴音器",
+      "price": 2970,
+      "datetime": "2018/11/10",
+      "comment": "3 組"
+    },
+    {
+      "name": "肌樂",
+      "price": 180,
+      "datetime": "2018/11/11",
+      "comment": ""
+    },
+    {
+      "name": "便當",
+      "price": 1245,
+      "datetime": "2018/11/11",
+      "comment": "慢跑活動結束"
+    },
+    {
+      "name": "便當",
+      "price": 1285,
+      "datetime": "2018/11/11",
+      "comment": "慢跑活動結束"
     }
   ]
 }

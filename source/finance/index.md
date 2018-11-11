@@ -28,7 +28,7 @@ layout: "finance"
 
 * [cost_2018.json](./cost_2018.json)
     <!-- $ cat cost_2018.json | jq '.entries[].price' |awk '{ sum += $1; } END {print sum;}' "$@" -->
-    * 支出合計 432,314
+    * 支出合計 437,994
 
 ### 支出明細
 
