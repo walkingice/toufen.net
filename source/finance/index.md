@@ -34,7 +34,7 @@ layout: "finance"
 
 * [cost_2018.json](./cost_2018.json)
     <!-- $ cat cost_2018.json | jq '.entries[].price' |awk '{ sum += $1; } END {print sum;}' "$@" -->
-    * 支出合計 557,994 (含 15 萬保證金)
+    * 支出合計 557,994 (含 12 萬保證金)
 
 ### 支出明細
 
